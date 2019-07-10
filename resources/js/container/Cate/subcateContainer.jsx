@@ -77,7 +77,7 @@ class subcateContainer extends Component {
         <h5>Thông tin cơ bản</h5>
         <div className="form">
           <div className="label">
-            <p>*Tên sản phẩm</p>
+            <p>*Chọn danh mục</p>
           </div>
           <div className="txt-form">
             <select className="form-control" onChange={this.onChange} value={CateId} name="CateId">
@@ -87,7 +87,7 @@ class subcateContainer extends Component {
         </div>
         <div className="form">
           <div className="label">
-            <p>*Tên sản phẩm</p>
+            <p>*Tên hãng</p>
           </div>
           <div className="txt-form">
             <input type="text" className="form-control" onChange={this.onChange} value={name} name="name" />

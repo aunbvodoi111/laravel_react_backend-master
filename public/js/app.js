@@ -62344,7 +62344,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68730,7 +68730,8 @@ var addProduct = function addProduct(product) {
       qty: product.qty,
       mass: product.mass,
       image: product.image,
-      price: product.price
+      price: product.price,
+      CateId: product.CateId
     }).then(function (response) {
       dispatch(addCateStore(response.data.cate));
     })["catch"](function (error) {
@@ -69561,7 +69562,7 @@ function (_Component) {
         className: "form"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "label"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "*T\xEAn s\u1EA3n ph\u1EA9m")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "*Ch\u1ECDn danh m\u1EE5c")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "txt-form"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
         className: "form-control",
@@ -69572,7 +69573,7 @@ function (_Component) {
         className: "form"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "label"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "*T\xEAn s\u1EA3n ph\u1EA9m")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "*T\xEAn h\xE3ng")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "txt-form"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
@@ -69976,17 +69977,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/img/menu3.png",
         alt: ""
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\u0110\u01A1n h\xE0ng"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "select-menu"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "https://cf.shopee.vn/file/aaa24a79e7015ab1d6c73392b4b54c93",
-        alt: ""
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Ph\u1EA1m \u0111\u1EE9c qu\xFD")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "select-menu"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "https://cf.shopee.vn/file/aaa24a79e7015ab1d6c73392b4b54c93",
-        alt: ""
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Ph\u1EA1m \u0111\u1EE9c qu\xFD"))) : ''), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\u0110\u01A1n h\xE0ng")))) : ''), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "user",
         onMouseEnter: this.onToogleUser,
         onMouseLeave: this.onToogleUser
@@ -70550,7 +70541,8 @@ function (_Component) {
         qty: qty,
         mass: mass,
         image: image,
-        price: price
+        price: price,
+        CateId: CateId
       };
 
       _this.props.addProduct(product);
@@ -70742,10 +70734,6 @@ function (_Component) {
         id: "file"
       }, "ref", "file")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: image
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "file",
-        multiple: true,
-        onChange: this.fileSelectedHandler
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {

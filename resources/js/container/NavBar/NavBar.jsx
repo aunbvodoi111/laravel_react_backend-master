@@ -72,14 +72,6 @@ class NavBar extends Component {
                     <span>Đơn hàng</span>
                   </Link>
                 </div>
-                <div className='select-menu'>
-                  <img src="https://cf.shopee.vn/file/aaa24a79e7015ab1d6c73392b4b54c93" alt="" />
-                  <span>Phạm đức quý</span>
-                </div>
-                <div className='select-menu'>
-                  <img src="https://cf.shopee.vn/file/aaa24a79e7015ab1d6c73392b4b54c93" alt="" />
-                  <span>Phạm đức quý</span>
-                </div>
               </div> : ''}
             </div>
             <div className="user" onMouseEnter={this.onToogleUser} onMouseLeave={this.onToogleUser}>

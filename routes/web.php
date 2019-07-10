@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main');
 })->middleware('auth');
 //cate
 Route::post('/add/cate','CateController@addCate');
@@ -56,5 +56,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/{any}', function () {
-    return view('welcome');
+    return view('main');
 })->where('any', '.*')->middleware('auth');

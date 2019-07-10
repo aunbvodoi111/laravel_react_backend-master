@@ -16,22 +16,24 @@ class productController extends Controller
         $request->validate([
             'name' => 'required|min:2',
         ]);
-        $subcate  = new Product;
-        $subcate->name =  $request->name;
-        $subcate->description =  $request->description;
-        $subcate->price =  $request->price;
-        $subcate->mass =  $request->mass;
-        $subcate->discount =  $request->discount;
-        $subcate->khuyenmai =  'dsadasasd';
-        $subcate->qty =  $request->qty;
-        $subcate->image =  $request->image;
-        $subcate->SubcateId =  $request->SubcateId;
-        $subcate->UserId =  Auth::user()->id;
-        $subcate->UnitId =  $request->UnitId;
-        $subcate->keyword =  changeTitle($request->name);
-        $subcate->save();
+        $product  = new Product;
+        $product->name =  $request->name;
+        $product->description =  $request->description;
+        $product->price =  $request->price;
+        $product->mass =  $request->mass;
+        $product->discount =  $request->discount;
+        $product->khuyenmai =  'dsadasasd';
+        $product->qty =  $request->qty;
+        $product->image =  $request->image;
+        $product->SubcateId =  $request->SubcateId;
+        $product->UserId =  Auth::user()->id;
+        $product->UnitId =  $request->UnitId;
+        $product->sold =  0;
+        $product->CateId =  $request->CateId;
+        $product->keyword =  changeTitle($request->name);
+        $product->save();
         return response([
-    		'subcate'=>$subcate
+    		'product'=>$product
     	]);
     }
     public function upload(Request $res){

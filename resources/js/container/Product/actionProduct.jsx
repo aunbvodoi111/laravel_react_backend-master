@@ -90,6 +90,7 @@ class actionProduct extends Component {
       mass: mass,
       image: image,
       price: price,
+      CateId: CateId
     }
     this.props.addProduct(product)
   }
@@ -204,8 +205,8 @@ class actionProduct extends Component {
           </div>
         </div>
         <input type="file" onChange={this.uploadImg} ref='file' id='file' ref='file' />
-        <img src={image} />
-        <input type="file" multiple onChange={this.fileSelectedHandler} />
+        <img src={image}  />
+        {/* <input type="file" multiple onChange={this.fileSelectedHandler} /> */}
         <div className="form">
           <button onClick={this.onClick}>Lưu</button>
           <button>Hủy</button>
