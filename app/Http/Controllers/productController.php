@@ -8,11 +8,14 @@ use App\Unit;
 use App\User;
 use App\Cart;
 use App\Cart_detail;
+use App\Mulimage;
 use Illuminate\Support\Facades\Auth;
+use Log;
 class productController extends Controller
 {
     //
     public function addProduct (Request $request){
+        // dd($request->all());
         $request->validate([
             'name' => 'required|min:2',
         ]);
@@ -32,6 +35,13 @@ class productController extends Controller
         $product->CateId =  $request->CateId;
         $product->keyword =  changeTitle($request->name);
         $product->save();
+        foreach ($request->images as $file) {
+            // dd($file);
+            $mulimage  = new Mulimage;
+            $mulimage->image =  $file;
+            $mulimage->ProductId =  $product->id;
+            $mulimage->save();
+        }
         return response([
     		'product'=>$product
     	]);
@@ -45,16 +55,19 @@ class productController extends Controller
         ], 200);
     }
     public function uploads(Request $res){
-        // dd($res->file);
-        
-        if ($res->get('file')) {
-            foreach ($res->get('file') as $file) {
-                dd($file);
+        // dd($res->files);
+        if ($res->files) {
+            foreach ($res->files as $files) {
+                foreach ($files as $file) {
+                    // dd($file);
+                // dd($files[0]);
                 $name= $file->getClientOriginalName();
+                // dd($name);
                 $file->move("img",$name); 
                 return response([
                     'result' => $name
                 ], 200);
+                }
             }
         }
 		

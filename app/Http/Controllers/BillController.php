@@ -8,6 +8,7 @@ use App\Unit;
 use App\User;
 use App\Bill;
 use App\Bill_detail;
+use App\Districts;
 use Illuminate\Support\Facades\Auth;
 use Mail; 
 class BillController extends Controller
@@ -31,9 +32,11 @@ class BillController extends Controller
         ]);
     }
     public function orderDetail($id){
-        $ordersDetail = Bill::where('id', $id)->with('bills_detail.product')->with('user')->first();
+        $districts = Districts::all();
+        $ordersDetail = Bill::where('id', $id)->with('address.district')->with('address.province')->with('bills_detail.product')->with('user')->first();
         return response([
-            'ordersDetail'=>$ordersDetail
+            'ordersDetail'=>$ordersDetail,
+            'districts' => $districts
         ]);
     }
     public function sendMail(){

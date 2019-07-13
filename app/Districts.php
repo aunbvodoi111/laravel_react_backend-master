@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Mulimage extends Model
+class Districts extends Model
 {
     //
-    protected $table = 'mulimages';
+    protected $table = 'districts';
 }

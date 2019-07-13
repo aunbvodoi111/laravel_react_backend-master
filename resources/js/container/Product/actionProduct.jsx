@@ -18,37 +18,50 @@ class actionProduct extends Component {
       qty: '',
       mass: '',
       image: '',
-      files: []
+      files: [],
+      images : []
     }
+    this.fileSelectedHandler = this.fileSelectedHandler.bind(this);
   }
   componentWillMount() {
-   
+
     this.props.fetchData()
   }
-  fileSelectedHandler = (e) => {
+  async fileSelectedHandler  (e)  {
     console.log(e.target.files[0])
-    var anhquy = e.target.files[0]
-    this.setState({ files: [...this.state.files, ...e.target.files] })
-    let file
-    file = this.state.files
-    let formData = new FormData();
-    formData.append('file[]', file);
-    axios.post('http://localhost:8000/uploads/',
-      formData,
-      {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
+    var anhquy = e.target.files
+
+    await this.setState({ files: [...this.state.files, ...e.target.files] })
+    let files
+    files = this.state.files
+    console.log(files)
+    if (files.length > 0) {
+      var formData = new FormData();
+      for (const file of files) {
+        formData.append('files[]', file, file.name);
       }
-    ).then(response => {
-      console.log(response)
-      // this.setState({
-      //   image: '/img/' + response.data.result
-      // })
-    })
-      .catch(function () {
-        console.log('FAILURE!!')
-      });
+      // formData.append('files[]', files);
+      axios.post('http://localhost:8000/uploads/',
+        formData,
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data'
+          }
+        }
+      ).then(response => {
+        this.state.files = []
+        var anhquy = '/img/' + response.data.result
+        console.log(response)
+        this.setState({ images: [...this.state.images, anhquy] })
+        console.log(this.state.images)
+        // this.setState({
+        //   image: '/img/' + response.data.result
+        // })
+      })
+        .catch(function () {
+          console.log('FAILURE!!')
+        });
+    }
   }
   uploadImg = (event) => {
     let file
@@ -56,6 +69,7 @@ class actionProduct extends Component {
     console.log(file)
     let formData = new FormData();
     formData.append('file', file);
+
     axios.post('http://localhost:8000/upload/',
       formData,
       {
@@ -79,7 +93,7 @@ class actionProduct extends Component {
     })
   }
   onClick = () => {
-    var { name, CateId, SubcateId, UnitId, description, discount, price, qty, mass, image } = this.state
+    var { name, CateId, SubcateId, UnitId, description, discount, price, qty, mass, image ,images } = this.state
     var product = {
       name: name,
       SubcateId: SubcateId,
@@ -90,12 +104,14 @@ class actionProduct extends Component {
       mass: mass,
       image: image,
       price: price,
+      images : images,
       CateId: CateId
     }
     this.props.addProduct(product)
   }
   render() {
     var { cates, units, subcates } = this.props
+    var { images } = this.state
     var { name, CateId, SubcateId, UnitId, description, discount, price, qty, mass, image } = this.state
     if (units) {
       var elmUnit = units.map((unit, index) => {
@@ -121,7 +137,16 @@ class actionProduct extends Component {
 
       })
     }
+    if (images) {
+      var elmimage = images.map((image, index) => {
 
+          return (
+            <img className="img" src ={ image } key={ index }/>
+          );
+        
+
+      })
+    }
 
     return (
       <div className="container-content">
@@ -205,8 +230,9 @@ class actionProduct extends Component {
           </div>
         </div>
         <input type="file" onChange={this.uploadImg} ref='file' id='file' ref='file' />
-        <img src={image}  />
-        {/* <input type="file" multiple onChange={this.fileSelectedHandler} /> */}
+        <img src={image} />
+        { elmimage }
+        <input type="file" multiple onChange={this.fileSelectedHandler} />
         <div className="form">
           <button onClick={this.onClick}>Lưu</button>
           <button>Hủy</button>

@@ -38,7 +38,8 @@ export const addProduct = (product) => {
             mass: product.mass,
             image: product.image,
             price: product.price,
-            CateId : product.CateId
+            CateId : product.CateId,
+            images : product.images
         }).then(response => {
             dispatch(addCateStore(response.data.cate))
         })

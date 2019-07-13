@@ -8,15 +8,15 @@ class DetailOrderContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-     
+
     }
   }
-  componentDidMount() {
+  async componentDidMount() {
     console.log('anhquy')
     var { match } = this.props
     if (match) {
       var id = match.params.id
-      this.props.fetchDataOrderDetail(id)
+      await this.props.fetchDataOrderDetail(id)
     }
   }
   render() {
@@ -24,7 +24,7 @@ class DetailOrderContainer extends Component {
     var bills_detail
     if (ordersDetail) {
       bills_detail = ordersDetail.bills_detail;
-      
+
     }
     if (bills_detail) {
       var elmData = bills_detail.map((item, index) => {
@@ -54,6 +54,15 @@ class DetailOrderContainer extends Component {
         );
       })
     }
+    // if (ordersDetail) {
+    //   return (
+    //     <div className='infor' >
+    //       <p>Địa chỉ nhận hàng</p>
+    //       <p>{ ordersDetail.address } - { ordersDetail.district.name } - { ordersDetail.province.address }</p>
+    //       <p>{ ordersDetail.name }, { ordersDetail.phone }</p>
+    //     </div>
+    //   );
+    // }
     return (
       <div className='container-detail'>
         <div className='status'>
@@ -63,7 +72,7 @@ class DetailOrderContainer extends Component {
         <div className='infor-customer'>
           <div className='infor'>
             <p>ID Đơn hàng</p>
-            <span>{ordersDetail  ? ordersDetail.id :  '' }</span>
+            <span>{ordersDetail ? ordersDetail.id  + '-' +  ordersDetail.address  : ''}</span>
           </div>
           <div className='infor'>
             <p>Địa chỉ nhận hàng</p>
@@ -113,7 +122,7 @@ class DetailOrderContainer extends Component {
                     <p>Tổng tiền sản phẩm</p>
                   </div>
                   <div className='div-sum'>
-                    <p>₫{ordersDetail  ? ordersDetail.sum :  '' }</p>
+                    <p>₫{ordersDetail ? ordersDetail.sum : ''}</p>
                   </div>
                 </div>
                 <div className='div'>

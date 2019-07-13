@@ -15,4 +15,7 @@ class Bill extends Model
     public function user(){
         return $this->belongsTo('App\User','UserIdBuyer','id');
     }
+    public function address(){
+        return $this->hasOne('App\Address', 'id', 'AddressId');
+    }
 }
