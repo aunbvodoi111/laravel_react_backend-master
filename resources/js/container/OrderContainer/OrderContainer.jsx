@@ -6,16 +6,32 @@ import { withRouter, Link } from 'react-router-dom'
 import { fetchDataOrder } from '../../actions/order'
 
 class productContainer extends Component {
+  constructor(props){
+    super(props)
+    this.state ={
+      status : -1
+    }
+  }
   componentWillMount() {
     this.props.fetchDataOrder()
   }
   sum = (order) => {
     console.log(order)
   }
+  queryOrder = (e) =>{
+    this.setState({
+      status : e
+    })
+    
+  }
   render() {
     var { orders } = this.props
+    var { status } = this.state
+    
     var bill = orders
-
+    if( status > -1){
+      bill = bill.filter( item => item.status === status)
+    }
     if (bill) {
       var almProduct = bill.map((order, index) => {
         return (
@@ -97,20 +113,20 @@ class productContainer extends Component {
       <div className='container-product'>
         <div className='old-wrapper'>
           <div className="menu-product">
-            <div className='item'>
-              <a href="">Tất cả</a>
+            <div className='item' onClick={ ()=> this.queryOrder(0)}>
+              <a >Tất cả</a>
             </div>
-            <div className='item'>
-              <a href="">Còn hàng</a>
+            <div className='item' onClick={ ()=> this.queryOrder(1)}>
+              <a >Chờ xác nhận</a>
             </div>
-            <div className='item'>
-              <a href="">Hết hàng</a>
+            <div className='item' onClick={ ()=> this.queryOrder(3)}>
+              <a >Đang giao</a>
             </div>
-            <div className='item'>
-              <a href="">Đã bị khóa</a>
+            <div className='item' onClick={ ()=> this.queryOrder(4)}>
+              <a >Hoàn thành </a>
             </div>
-            <div className='item'>
-              <a href="">Đã bị ẩn</a>
+            <div className='item' onClick={ ()=> this.queryOrder(5)}>
+              <a >Đã hủy</a>
             </div>
           </div>
         </div>

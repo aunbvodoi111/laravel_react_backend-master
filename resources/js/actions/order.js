@@ -17,11 +17,11 @@ export const fetchDataStore = (data) => {
     }
 }
 
-export const fetchDataOrderDetail = (id) => {
-    return (dispatch) => {
-        axios.get(`${ROOT_URL}/list/bill/detail/`+id).then(response => {
-            dispatch(fetchDataDetailStore(response.data))
-        })
+ export  const  fetchDataOrderDetail = (id) => {
+    return async (dispatch) => {
+        var data = await axios.get(`${ROOT_URL}/list/bill/detail/`+id)
+            dispatch(fetchDataDetailStore(data.data))
+        
     }
 }
 

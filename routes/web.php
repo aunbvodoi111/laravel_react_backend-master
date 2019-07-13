@@ -33,6 +33,9 @@ Route::post('/update/unit','UnitController@updateUnit');
 Route::post('/upload','productController@upload');
 Route::post('/uploads','productController@uploads');
 Route::get('/list/product','productController@listProduct');
+Route::get('/edit/product/{id}','productController@editProduct');
+Route::post('/update/product/{id}','productController@updateProduct');
+
 Route::post('/add/product','productController@addProduct');
 Route::get('/list/data','productController@listData');
 Route::get('/delete/unit/{id}','productController@deleteUnit');

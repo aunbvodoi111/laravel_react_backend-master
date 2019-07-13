@@ -20,6 +20,7 @@ import { createStore, applyMiddleware } from 'redux';
 import Routes from './routes/routes';
 import { BrowserRouter, Route } from 'react-router-dom'
 import rootReducer from './reducers/index';
+// import promise from 'redux-promise-middleware'
 import thunk from 'redux-thunk';
 // import './styles/base.sass';
 const store = createStore(rootReducer, applyMiddleware(thunk));

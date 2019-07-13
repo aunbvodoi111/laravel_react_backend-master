@@ -17,6 +17,7 @@ const appRouter = () => (
                 <Route path="/" component={App} exact={true} />
                 <Route path="/product/list/all" component={productContainer} exact={true} />
                 <Route path="/product/new" component={actionContainer} exact={true} />
+                <Route path="/product/:id" component={actionContainer} exact={true} />
                 <Route path="/cate/all" component={cateContainer} exact={true} />
                 <Route path="/subcate/all" component={subcateContainer} exact={true} />
                 <Route path="/unit/list/all" component={unitContainer} exact={true} />

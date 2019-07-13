@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './../../../sass/product/index.scss'
 import { connect } from 'react-redux'
 import { addProduct, fetchProduct } from './../../actions/product'
-
+import { withRouter, Link } from 'react-router-dom'
 class productContainer extends Component {
   componentWillMount() {
     this.props.fetchProduct()
@@ -10,21 +10,26 @@ class productContainer extends Component {
 
   render() {
     var { products } = this.props
-    if(products){
+    if (products) {
       var almProduct = products.map((product, index) => {
         return (
           <div className="product" key={index}>
-            <div className="product-div">
-              <div className="img">
-                <img src={product.image} />
+            <Link to={{
+              pathname: `/product/${product.id}`,
+              state: { authenticated: true }
+            }}>
+              <div className="product-div">
+                <div className="img">
+                  <img src={product.image} />
+                </div>
+                <div className="name">
+                  {product.name}
+                </div>
+                <div className="price">
+                  <p>{product.price} đ</p>
+                </div>
               </div>
-              <div className="name">
-                {product.name}
-                          </div>
-              <div className="price">
-                <p>{product.price} đ</p>
-              </div>
-            </div>
+            </Link>
           </div>
         );
       })
@@ -60,7 +65,7 @@ class productContainer extends Component {
             </div>
           </div>
           <div className="product-content">
-            { almProduct }
+            {almProduct}
             {/* <div style=" clear:both;"></div> */}
           </div>
         </div >

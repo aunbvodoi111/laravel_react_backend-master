@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './../../../sass/product/action.scss'
 
 import { connect } from 'react-redux'
-import { addProduct, fetchData, } from './../../actions/product'
+import { addProduct, fetchData, editProduct ,updateProduct} from './../../actions/product'
 class actionProduct extends Component {
   constructor(props) {
     super(props)
@@ -19,18 +19,26 @@ class actionProduct extends Component {
       mass: '',
       image: '',
       files: [],
-      images : []
+      images: [],
+      index : -1
     }
     this.fileSelectedHandler = this.fileSelectedHandler.bind(this);
   }
   componentWillMount() {
 
-    this.props.fetchData()
+
+    var { match } = this.props
+    if (match) {
+      var id = match.params.id
+      this.props.editProduct(id)
+      this.props.fetchData()
+    } else {
+      this.props.fetchData()
+    }
   }
-  async fileSelectedHandler  (e)  {
+  async fileSelectedHandler(e) {
     console.log(e.target.files[0])
     var anhquy = e.target.files
-
     await this.setState({ files: [...this.state.files, ...e.target.files] })
     let files
     files = this.state.files
@@ -50,9 +58,10 @@ class actionProduct extends Component {
         }
       ).then(response => {
         this.state.files = []
-        var anhquy = '/img/' + response.data.result
+        var image = { image : '/img/' + response.data.result}
         console.log(response)
-        this.setState({ images: [...this.state.images, anhquy] })
+        console.log(this.state.images)
+        this.setState({ images: [...this.state.images, image ] })
         console.log(this.state.images)
         // this.setState({
         //   image: '/img/' + response.data.result
@@ -63,6 +72,27 @@ class actionProduct extends Component {
         });
     }
   }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps && nextProps.product) {
+      var { product, mulimage } = nextProps;
+      this.setState({
+        name: product.name,
+        CateId: product.CateId,
+        SubcateId: product.SubcateId,
+        UnitId: product.UnitId,
+        description: product.description,
+        discount: product.discount,
+        price: product.price,
+        qty: product.qty,
+        mass: product.mass,
+        image: product.image,
+        images: mulimage,
+        index : 0
+      });
+    }
+  }
+
   uploadImg = (event) => {
     let file
     file = event.target.files[0]
@@ -93,7 +123,7 @@ class actionProduct extends Component {
     })
   }
   onClick = () => {
-    var { name, CateId, SubcateId, UnitId, description, discount, price, qty, mass, image ,images } = this.state
+    var { name, CateId, SubcateId, UnitId, description, discount, price, qty, mass, image, images ,index } = this.state
     var product = {
       name: name,
       SubcateId: SubcateId,
@@ -104,10 +134,18 @@ class actionProduct extends Component {
       mass: mass,
       image: image,
       price: price,
-      images : images,
+      images: images,
       CateId: CateId
     }
-    this.props.addProduct(product)
+    if( index > -1 ){
+      var id = this.props.match.params.id
+      console.log('đây')
+      this.props.updateProduct(id,product)
+    }else{
+      console.log('k')
+      this.props.addProduct(product)
+    }
+    
   }
   render() {
     var { cates, units, subcates } = this.props
@@ -137,14 +175,11 @@ class actionProduct extends Component {
 
       })
     }
-    if (images) {
+    if (images.length > 0) {
       var elmimage = images.map((image, index) => {
-
-          return (
-            <img className="img" src ={ image } key={ index }/>
-          );
-        
-
+        return (
+          <img className="img" src={image.image} key={index} />
+        );
       })
     }
 
@@ -231,7 +266,7 @@ class actionProduct extends Component {
         </div>
         <input type="file" onChange={this.uploadImg} ref='file' id='file' ref='file' />
         <img src={image} />
-        { elmimage }
+        {elmimage}
         <input type="file" multiple onChange={this.fileSelectedHandler} />
         <div className="form">
           <button onClick={this.onClick}>Lưu</button>
@@ -247,7 +282,9 @@ const mapStateToProps = state => {
   return {
     cates: state.product.cates,
     subcates: state.product.subcates,
-    units: state.product.units
+    units: state.product.units,
+    product: state.product.product,
+    mulimage: state.product.mulimage
   }
 }
 const mapDispatchToProps = (dispatch, props) => {
@@ -259,7 +296,12 @@ const mapDispatchToProps = (dispatch, props) => {
       console.log(product)
       dispatch(addProduct(product))
     },
-
+    editProduct: (id) => {
+      dispatch(editProduct(id))
+    },
+    updateProduct : (id,product)=>{
+      dispatch(updateProduct(id,product))
+    }
   }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(actionProduct);

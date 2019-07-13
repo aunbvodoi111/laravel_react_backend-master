@@ -11,12 +11,12 @@ class DetailOrderContainer extends Component {
 
     }
   }
-  async componentDidMount() {
+   componentDidMount() {
     console.log('anhquy')
     var { match } = this.props
     if (match) {
       var id = match.params.id
-      await this.props.fetchDataOrderDetail(id)
+      this.props.fetchDataOrderDetail(id)
     }
   }
   render() {
@@ -26,6 +26,7 @@ class DetailOrderContainer extends Component {
       bills_detail = ordersDetail.bills_detail;
 
     }
+    if(!ordersDetail || !ordersDetail.address) return null;
     if (bills_detail) {
       var elmData = bills_detail.map((item, index) => {
         return (
@@ -72,12 +73,12 @@ class DetailOrderContainer extends Component {
         <div className='infor-customer'>
           <div className='infor'>
             <p>ID Đơn hàng</p>
-            <span>{ordersDetail ? ordersDetail.id  + '-' +  ordersDetail.address  : ''}</span>
+            <span>{ordersDetail ? ordersDetail.id  + '-' +  ordersDetail.address.district.name  : ''}</span>
           </div>
           <div className='infor'>
             <p>Địa chỉ nhận hàng</p>
-            <p>Gia lâm - Hà nội</p>
-            <p>Nguyen thu trang, 84813898999</p>
+            <p> {ordersDetail ? ordersDetail.address.address  + '-' +ordersDetail.address.district.name  + '-' +  ordersDetail.address.province.name  : ''}</p>
+            <p>{ordersDetail ? ordersDetail.address.name  + '-' +  ordersDetail.address.phone : ''}</p>
           </div>
           <div className='infor'>
             <p>Thông tin vận chuyển</p>
@@ -157,7 +158,7 @@ const mapStateToProps = state => {
     ordersDetail: state.order.ordersDetail
   }
 }
-const mapDispatchToProps = (dispatch, props) => {
+const mapDispatchToProps =  (dispatch, props) => {
   console.log('anhquy')
   return {
     fetchDataOrderDetail: (id) => {

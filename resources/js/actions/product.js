@@ -18,6 +18,47 @@ export const fetchProduct = () => {
     }
 }
 
+export const editProduct = (id) => {
+    return (dispatch) => {
+        axios.get(`${ROOT_URL}/edit/product/` + id).then(response => {
+            dispatch(fetchEditProductStore(response.data))
+        })
+    }
+}
+
+export const updateProduct = (id, product) => {
+    return (dispatch) => {
+        axios.post(`${ROOT_URL}/update/product/` + id, {
+            name: product.name,
+            SubcateId: product.SubcateId,
+            UnitId: product.UnitId,
+            description: product.description,
+            discount: product.discount,
+            qty: product.qty,
+            mass: product.mass,
+            image: product.image,
+            price: product.price,
+            CateId: product.CateId,
+            images: product.images
+        }).then(response => {
+            // dispatch(addCateStore(response.data.cate))
+        })
+        .catch(error => {
+            if (error.response) {
+                dispatch(errors(error.response.data.errors.name))
+            }
+        })
+    }
+}
+
+export const fetchEditProductStore = (product) => {
+    return {
+        type: Types.EDIT_PRODUCT,
+        product
+    }
+}
+
+
 export const deleteCate = (id) => {
     return (dispatch) => {
         axios.get(`${ROOT_URL}/delete/cate/` + id).then(response => {
@@ -38,8 +79,8 @@ export const addProduct = (product) => {
             mass: product.mass,
             image: product.image,
             price: product.price,
-            CateId : product.CateId,
-            images : product.images
+            CateId: product.CateId,
+            images: product.images
         }).then(response => {
             dispatch(addCateStore(response.data.cate))
         })

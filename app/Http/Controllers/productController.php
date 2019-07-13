@@ -46,6 +46,7 @@ class productController extends Controller
     		'product'=>$product
     	]);
     }
+
     public function upload(Request $res){
         $file=$res->file;
 		$name= $file->getClientOriginalName();
@@ -54,6 +55,57 @@ class productController extends Controller
             'result' => $name
         ], 200);
     }
+    
+    public function editProduct( $id ){
+        // dd($id);
+        $product = Product::find($id);
+        $mulimage = Mulimage::where('ProductId',$id)->get();
+        // $file=$res->file;
+		// $name= $file->getClientOriginalName();
+		// $file->move("img",$name); 
+		return response([
+            'product' => $product,
+            'mulimage' => $mulimage
+        ], 200);
+    }
+
+    public function updateProduct(Request $request , $id ){
+        // dd($request->all());
+        $product = Product::find($id);
+        
+        $product->name =  $request->name;
+        $product->description =  $request->description;
+        $product->price =  $request->price;
+        $product->mass =  $request->mass;
+        $product->discount =  $request->discount;
+        $product->khuyenmai =  'dsadasasd';
+        $product->qty =  $request->qty;
+        $product->image =  $request->image;
+        $product->SubcateId =  $request->SubcateId;
+        $product->UserId =  Auth::user()->id;
+        $product->UnitId =  $request->UnitId;
+        $product->sold =  0;
+        $product->CateId =  $request->CateId;
+        $product->keyword =  changeTitle($request->name);
+        $product->save();
+        $mulimage  = Mulimage::where('ProductId',$id)->get();
+        foreach ($mulimage as $file) {
+            // dd($file);
+            $file->delete();
+            // $mulimage  = new Mulimage;
+            // $mulimage->image =  $file['image'];
+            // $mulimage->ProductId =  $product->id;
+            // $mulimage->save();
+        }
+        foreach ($request->images as $file) {
+            // dd($file);
+            $mulimage  = new Mulimage;
+            $mulimage->image =  $file['image'];
+            $mulimage->ProductId =  $product->id;
+            $mulimage->save();
+        }
+    }
+    
     public function uploads(Request $res){
         // dd($res->files);
         if ($res->files) {
