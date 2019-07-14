@@ -13,6 +13,7 @@ use App\Dateorder;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Mail; 
+use App\Notification;
 class BillController extends Controller
 {
     //
@@ -66,8 +67,29 @@ class BillController extends Controller
         
         $mytime = Carbon::now();
         $dateorder = new Dateorder;
-        $dateorder->date = $mytime; 
+        
         $dateorder->BillId = $bill->id;
         $dateorder->save(); 
+        $notification = new Notification;
+        $notification->UserIdSaler = $bill->UserIdSaler;
+        $notification->BillId = $bill->id;
+        $notification->UserIdBuyer = $bill->UserIdBuyer;
+        $notification->content = 'Đon hàng của bạn đã được xác nhận ';
+        $notification->save();
+        $data=
+            [
+                'name'=>'name',
+                'date_order'=>'name',
+                'sum'=>'name',
+                
+            ];
+        Mail::send('mail.mail',$data,function($message) use($data){
+            $message->from('phamquycntta@gmail.com','anhquy');
+            $message->to('phamqucntta11@gmail.com');
+            $message->subject('ok');
+            });
+            return response([
+                'data' => $data
+            ]);
     }
 }
