@@ -1,3 +1,19 @@
+.active{
+    
+    a{
+        border-bottom: 4px solid red !important;
+        margin: 0;
+        padding: 16px 18px 14px;
+        border-bottom: 4px solid transparent;
+        font-size: 16px;
+        text-decoration: none;
+        color: #666;
+        -webkit-transition: opacity .2s ease,border-bottom-color .2s ease;
+        transition: opacity .2s ease,border-bottom-color .2s ease;
+        cursor: pointer;
+        line-height: 54px;
+    }
+}
 .container-detail{
     width: 1200px;
     margin: auto;

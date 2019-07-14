@@ -25,6 +25,7 @@ class productContainer extends Component {
     
   }
   render() {
+    
     var { orders } = this.props
     var { status } = this.state
     
@@ -32,6 +33,22 @@ class productContainer extends Component {
     if( status > -1){
       bill = bill.filter( item => item.status === status)
     }
+    // let statusBill 
+    // if( bill){
+    //   if( bill.status == 0 ){
+    //     statusBill = <p>Chờ xác nhận</p>
+    //   }else if( bill.status == 1 ){
+    //     statusBill = <p>Chờ lấy hàng</p>
+    //   }else if( bill.status == 2 ){
+    //     statusBill = <p>Đang giao</p>
+    //   }else if( bill.status == 3 ){
+    //     statusBill = <p>Hoàn thành</p>
+    //   }else if( bill.status == 4 ){
+    //     statusBill = <p>Đã hủy</p>
+    //   }else{
+    //     statusBill = <p>Đã hủy</p>
+    //   }
+    // }
     if (bill) {
       var almProduct = bill.map((order, index) => {
         return (
@@ -65,7 +82,11 @@ class productContainer extends Component {
                           <p>{item.product.discount}</p>
                         </div>
                         <div className='status'>
-                          <p>Tình trạng</p>
+                          { order.status === 0 ? <p>Chờ xác nhận</p> :'' }
+                          { order.status === 1 ? <p>Chờ lấy hàng</p> :'' }
+                          { order.status === 2 ? <p>Đang giao</p> :'' }
+                          { order.status === 3 ? <p>Hoàn thành</p> :'' }
+                          { order.status === 4 ? <p>Đã hủy</p> :'' }
                         </div>
                         <div className='transport'>
                           <p>Giao hàng tiết kiệm</p>
@@ -113,19 +134,22 @@ class productContainer extends Component {
       <div className='container-product'>
         <div className='old-wrapper'>
           <div className="menu-product">
-            <div className='item' onClick={ ()=> this.queryOrder(0)}>
+            <div  onClick={ ()=> this.queryOrder(-1)} className={ status === -1 ? 'active' : 'item' }>
               <a >Tất cả</a>
             </div>
-            <div className='item' onClick={ ()=> this.queryOrder(1)}>
+            <div  onClick={ ()=> this.queryOrder(0)} className={ status === 0 ? 'active' : 'item' }>
               <a >Chờ xác nhận</a>
             </div>
-            <div className='item' onClick={ ()=> this.queryOrder(3)}>
+            <div  onClick={ ()=> this.queryOrder(1)} className={ status === 1 ? 'active' : 'item' }>
+              <a >Chờ lấy hàng</a>
+            </div>
+            <div className='item' onClick={ ()=> this.queryOrder(2)} className={ status === 2 ? 'active' : 'item' }>
               <a >Đang giao</a>
             </div>
-            <div className='item' onClick={ ()=> this.queryOrder(4)}>
+            <div className='item' onClick={ ()=> this.queryOrder(3)} className={ status === 3? 'active' : 'item' }>
               <a >Hoàn thành </a>
             </div>
-            <div className='item' onClick={ ()=> this.queryOrder(5)}>
+            <div className='item' onClick={ ()=> this.queryOrder(4)} className={ status === 4 ? 'active' : 'item' }>
               <a >Đã hủy</a>
             </div>
           </div>

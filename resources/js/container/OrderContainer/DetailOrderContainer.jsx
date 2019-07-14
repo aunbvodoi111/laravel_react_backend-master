@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { withRouter, Link } from 'react-router-dom'
 import './../../../sass/order/detail.scss'
-import { fetchDataOrderDetail } from '../../actions/order'
+
+import { fetchDataOrderDetail  ,changeStatusOrder } from '../../actions/order'
 
 class DetailOrderContainer extends Component {
   constructor(props) {
@@ -11,13 +12,20 @@ class DetailOrderContainer extends Component {
 
     }
   }
-   componentDidMount() {
+  componentDidMount() {
     console.log('anhquy')
     var { match } = this.props
     if (match) {
       var id = match.params.id
       this.props.fetchDataOrderDetail(id)
     }
+  }
+  changeStatus = () =>{
+    var { match } = this.props
+    var id = match.params.id
+    console.log(match.params.id)
+    this.props.changeStatusOrder(id)
+    this.props.history.goBack();
   }
   render() {
     var { ordersDetail } = this.props
@@ -26,7 +34,7 @@ class DetailOrderContainer extends Component {
       bills_detail = ordersDetail.bills_detail;
 
     }
-    if(!ordersDetail || !ordersDetail.address) return null;
+    if (!ordersDetail || !ordersDetail.address) return null;
     if (bills_detail) {
       var elmData = bills_detail.map((item, index) => {
         return (
@@ -55,30 +63,33 @@ class DetailOrderContainer extends Component {
         );
       })
     }
-    // if (ordersDetail) {
-    //   return (
-    //     <div className='infor' >
-    //       <p>Địa chỉ nhận hàng</p>
-    //       <p>{ ordersDetail.address } - { ordersDetail.district.name } - { ordersDetail.province.address }</p>
-    //       <p>{ ordersDetail.name }, { ordersDetail.phone }</p>
-    //     </div>
-    //   );
-    // }
+    let button 
+    if (ordersDetail.status == 0 ) {
+      button =  <button onClick ={ this.changeStatus }>Xác nhận đơn hàng</button>
+    }else if( ordersDetail.status == 1 ){
+      button =  <button onClick ={ this.changeStatus }>Đã lấy hàng</button>
+    }
+    else if( ordersDetail.status == 2 ){
+      button =  <button onClick ={ this.changeStatus }>Đã giao thành công</button>
+    }
     return (
       <div className='container-detail'>
         <div className='status'>
           <p>Đã hủy</p>
           <span>Do người dùng hủy</span>
+          <div className='button'>
+            { button }
+          </div>
         </div>
         <div className='infor-customer'>
           <div className='infor'>
             <p>ID Đơn hàng</p>
-            <span>{ordersDetail ? ordersDetail.id  + '-' +  ordersDetail.address.district.name  : ''}</span>
+            <span>{ordersDetail ? ordersDetail.id + '-' + ordersDetail.address.district.name : ''}</span>
           </div>
           <div className='infor'>
             <p>Địa chỉ nhận hàng</p>
-            <p> {ordersDetail ? ordersDetail.address.address  + '-' +ordersDetail.address.district.name  + '-' +  ordersDetail.address.province.name  : ''}</p>
-            <p>{ordersDetail ? ordersDetail.address.name  + '-' +  ordersDetail.address.phone : ''}</p>
+            <p> {ordersDetail ? ordersDetail.address.address + '-' + ordersDetail.address.district.name + '-' + ordersDetail.address.province.name : ''}</p>
+            <p>{ordersDetail ? ordersDetail.address.name + '-' + ordersDetail.address.phone : ''}</p>
           </div>
           <div className='infor'>
             <p>Thông tin vận chuyển</p>
@@ -158,11 +169,14 @@ const mapStateToProps = state => {
     ordersDetail: state.order.ordersDetail
   }
 }
-const mapDispatchToProps =  (dispatch, props) => {
+const mapDispatchToProps = (dispatch, props) => {
   console.log('anhquy')
-  return {
+  return { 
     fetchDataOrderDetail: (id) => {
       dispatch(fetchDataOrderDetail(id))
+    },
+    changeStatusOrder: (id) => {
+      dispatch(changeStatusOrder(id))
     }
   }
 }

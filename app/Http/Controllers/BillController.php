@@ -7,8 +7,10 @@ use App\Product;
 use App\Unit;
 use App\User;
 use App\Bill;
-use App\Bill_detail;
+use App\Bill_detail; 
 use App\Districts;
+use App\Dateorder;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Mail; 
 class BillController extends Controller
@@ -55,5 +57,17 @@ class BillController extends Controller
             return response([
                 'data' => $data
             ]);
+    }
+    public function editBill( Request $res,$id){
+        $bill = Bill::find($id);
+        $bill->status = $bill->status + 1;
+        // dd($id);
+        $bill->save();
+        
+        $mytime = Carbon::now();
+        $dateorder = new Dateorder;
+        $dateorder->date = $mytime; 
+        $dateorder->BillId = $bill->id;
+        $dateorder->save(); 
     }
 }

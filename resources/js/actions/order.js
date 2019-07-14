@@ -15,7 +15,7 @@ export const fetchDataStore = (data) => {
         type: Types.LIST_ORDER,
         data
     }
-}
+} 
 
  export  const  fetchDataOrderDetail = (id) => {
     return async (dispatch) => {
@@ -32,3 +32,17 @@ export const fetchDataDetailStore = (data) => {
     }
 }
 
+export  const  changeStatusOrder = (id) => {
+    return async (dispatch) => {
+        var data = await axios.post(`${ROOT_URL}/edit/bill/`+id)
+            // dispatch(changeStatusOrderStore(data.data))
+        
+    }
+}
+
+// export const changeStatusOrderStore = (data) => {
+//     return {
+//         type: Types.FETCH_DATA_ORDER_DETAIL,
+//         data
+//     }
+// }

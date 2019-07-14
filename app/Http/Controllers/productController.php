@@ -38,7 +38,7 @@ class productController extends Controller
         foreach ($request->images as $file) {
             // dd($file);
             $mulimage  = new Mulimage;
-            $mulimage->image =  $file;
+            $mulimage->image =  $file['image'];
             $mulimage->ProductId =  $product->id;
             $mulimage->save();
         }

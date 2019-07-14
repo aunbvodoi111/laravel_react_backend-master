@@ -5,7 +5,7 @@
     min-width: 1200px;
     top: 56px;
     background: #fff;
-    position: fixed;
+    
     z-index: 90000;
     -webkit-box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,.1);
     box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,.1);
@@ -15,7 +15,7 @@
         display: flex;
         .menu-product{
             display: flex;
-            width: 50%;
+            width: 60%;
             align-items: center;
             .item{
                 a{

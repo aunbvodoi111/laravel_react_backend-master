@@ -6326,7 +6326,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".container-detail {\n  width: 1200px;\n  margin: auto;\n}\n.container-detail .status {\n  width: 100%;\n  background-color: #fff;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.09);\n  -webkit-transition: box-shadow 0.5s ease;\n  transition: box-shadow 0.5s ease;\n  display: block;\n  margin: 16px 0;\n  width: 100%;\n  padding: 10px;\n  color: #404040;\n}\n.container-detail .status p {\n  color: red;\n  font-weight: bold;\n}\n.container-detail .status span {\n  color: black;\n}\n.container-detail .infor-customer {\n  width: 100%;\n  background-color: #fff;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.09);\n  -webkit-transition: box-shadow 0.5s ease;\n  transition: box-shadow 0.5s ease;\n  display: block;\n  margin: 16px 0;\n  width: 100%;\n  padding: 10px;\n  color: #404040;\n}\n.container-detail .infor-customer p {\n  margin-top: 0px;\n  color: black;\n  font-weight: bold;\n}\n.container-detail .infor-customer p:nth-child(2) {\n  margin-top: 4px;\n  color: grey;\n  font-weight: normal;\n}\n.container-detail .infor-customer p:nth-child(3) {\n  color: grey;\n  font-weight: normal;\n}\n.container-detail .content-order {\n  width: 100%;\n  background-color: #fff;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.09);\n  -webkit-transition: box-shadow 0.5s ease;\n  transition: box-shadow 0.5s ease;\n  display: block;\n  margin: 16px 0;\n  width: 100%;\n  padding: 10px;\n  color: #404040;\n}\n.container-detail .content-order .title-order {\n  width: 20%;\n  display: -webkit-box;\n  display: flex;\n}\n.container-detail .content-order .title-order .image {\n  width: 17%;\n}\n.container-detail .content-order .title-order .image img {\n  width: 100%;\n  border-radius: 100%;\n}\n.container-detail .content-order .title-order .name-user {\n  width: 50%;\n  margin-left: 8px;\n}\n.container-detail .content-order .title-order .name-user strong {\n  color: grey;\n}\n.container-detail .content-order .infor {\n  width: 100%;\n}\n.container-detail .content-order .infor .title-order-view {\n  padding: 10px;\n  margin-top: 20px;\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.container-detail .content-order .infor .title-order-view .stt {\n  width: 8%;\n}\n.container-detail .content-order .infor .title-order-view .name-order {\n  width: 55%;\n  display: -webkit-box;\n  display: flex;\n  margin-right: 30px;\n}\n.container-detail .content-order .infor .title-order-view .name-order .img {\n  width: 10%;\n}\n.container-detail .content-order .infor .title-order-view .name-order .img img {\n  width: 100%;\n}\n.container-detail .content-order .infor .title-order-view .price-order {\n  width: 10%;\n}\n.container-detail .content-order .infor .title-order-view .qty-order {\n  width: 10%;\n}\n.container-detail .content-order .infor .title-order-view .total-order {\n  width: 10%;\n}\n.container-detail .content-order .infor .end-total {\n  width: 100%;\n}\n.container-detail .content-order .infor .end-total .div-right {\n  width: 30%;\n  margin-left: 65%;\n}\n.container-detail .content-order .infor .end-total .div-right .div {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.container-detail .content-order .infor .end-total .div-right .div .div-title {\n  width: 50%;\n}\n.container-detail .content-order .infor .end-total .div-right .div .div-sum {\n  width: 50%;\n}", ""]);
+exports.push([module.i, ".active a {\n  border-bottom: 4px solid red !important;\n  margin: 0;\n  padding: 16px 18px 14px;\n  border-bottom: 4px solid transparent;\n  font-size: 16px;\n  text-decoration: none;\n  color: #666;\n  -webkit-transition: opacity 0.2s ease, border-bottom-color 0.2s ease;\n  transition: opacity 0.2s ease, border-bottom-color 0.2s ease;\n  cursor: pointer;\n  line-height: 54px;\n}\n\n.container-detail {\n  width: 1200px;\n  margin: auto;\n}\n.container-detail .status {\n  width: 100%;\n  background-color: #fff;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.09);\n  -webkit-transition: box-shadow 0.5s ease;\n  transition: box-shadow 0.5s ease;\n  display: block;\n  margin: 16px 0;\n  width: 100%;\n  padding: 10px;\n  color: #404040;\n}\n.container-detail .status p {\n  color: red;\n  font-weight: bold;\n}\n.container-detail .status span {\n  color: black;\n}\n.container-detail .infor-customer {\n  width: 100%;\n  background-color: #fff;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.09);\n  -webkit-transition: box-shadow 0.5s ease;\n  transition: box-shadow 0.5s ease;\n  display: block;\n  margin: 16px 0;\n  width: 100%;\n  padding: 10px;\n  color: #404040;\n}\n.container-detail .infor-customer p {\n  margin-top: 0px;\n  color: black;\n  font-weight: bold;\n}\n.container-detail .infor-customer p:nth-child(2) {\n  margin-top: 4px;\n  color: grey;\n  font-weight: normal;\n}\n.container-detail .infor-customer p:nth-child(3) {\n  color: grey;\n  font-weight: normal;\n}\n.container-detail .content-order {\n  width: 100%;\n  background-color: #fff;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.09);\n  -webkit-transition: box-shadow 0.5s ease;\n  transition: box-shadow 0.5s ease;\n  display: block;\n  margin: 16px 0;\n  width: 100%;\n  padding: 10px;\n  color: #404040;\n}\n.container-detail .content-order .title-order {\n  width: 20%;\n  display: -webkit-box;\n  display: flex;\n}\n.container-detail .content-order .title-order .image {\n  width: 17%;\n}\n.container-detail .content-order .title-order .image img {\n  width: 100%;\n  border-radius: 100%;\n}\n.container-detail .content-order .title-order .name-user {\n  width: 50%;\n  margin-left: 8px;\n}\n.container-detail .content-order .title-order .name-user strong {\n  color: grey;\n}\n.container-detail .content-order .infor {\n  width: 100%;\n}\n.container-detail .content-order .infor .title-order-view {\n  padding: 10px;\n  margin-top: 20px;\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.container-detail .content-order .infor .title-order-view .stt {\n  width: 8%;\n}\n.container-detail .content-order .infor .title-order-view .name-order {\n  width: 55%;\n  display: -webkit-box;\n  display: flex;\n  margin-right: 30px;\n}\n.container-detail .content-order .infor .title-order-view .name-order .img {\n  width: 10%;\n}\n.container-detail .content-order .infor .title-order-view .name-order .img img {\n  width: 100%;\n}\n.container-detail .content-order .infor .title-order-view .price-order {\n  width: 10%;\n}\n.container-detail .content-order .infor .title-order-view .qty-order {\n  width: 10%;\n}\n.container-detail .content-order .infor .title-order-view .total-order {\n  width: 10%;\n}\n.container-detail .content-order .infor .end-total {\n  width: 100%;\n}\n.container-detail .content-order .infor .end-total .div-right {\n  width: 30%;\n  margin-left: 65%;\n}\n.container-detail .content-order .infor .end-total .div-right .div {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.container-detail .content-order .infor .end-total .div-right .div .div-title {\n  width: 50%;\n}\n.container-detail .content-order .infor .end-total .div-right .div .div-sum {\n  width: 50%;\n}", ""]);
 
 // exports
 
@@ -6383,7 +6383,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".container-product {\n  left: 0;\n  width: 100%;\n  height: 54px;\n  min-width: 1200px;\n  top: 56px;\n  background: #fff;\n  position: fixed;\n  z-index: 90000;\n  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1);\n}\n.container-product .old-wrapper {\n  width: 1200px;\n  margin: 0 auto;\n  display: -webkit-box;\n  display: flex;\n}\n.container-product .old-wrapper .menu-product {\n  display: -webkit-box;\n  display: flex;\n  width: 50%;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.container-product .old-wrapper .menu-product .item a {\n  margin: 0;\n  padding: 16px 18px 14px;\n  border-bottom: 4px solid transparent;\n  font-size: 16px;\n  text-decoration: none;\n  color: #666;\n  -webkit-transition: opacity 0.2s ease, border-bottom-color 0.2s ease;\n  transition: opacity 0.2s ease, border-bottom-color 0.2s ease;\n  cursor: pointer;\n  line-height: 54px;\n}\n.container-product .content {\n  width: 1200px;\n  margin: auto;\n}\n.container-product .content .old-pr {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n  margin-top: 30px;\n}\n.container-product .content .old-pr .total-product {\n  width: 250px;\n  height: 30px;\n  border: 1px solid red;\n  border-radius: 10px;\n  margin-left: 30px;\n}\n.container-product .content .old-pr .total-product p {\n  line-height: 30px;\n  margin-left: 5px;\n}\n.container-product .content .product-content {\n  width: 100%;\n}\n.container-product .content .product-content .product {\n  float: left;\n  width: 16.6%;\n  height: 275px;\n  padding: 3px;\n}\n.container-product .content .product-content .product .product-div {\n  border: 1px solid transparent;\n  background: white;\n  cursor: pointer;\n}\n.container-product .content .product-content .product .product-div .img img {\n  width: 100%;\n  height: 188px;\n}\n.container-product .content .product-content .product .product-div .name a {\n  padding: 4px;\n  word-wrap: break-word;\n  line-height: 1.125rem;\n  height: 2.25rem;\n  overflow: hidden;\n  display: -webkit-box;\n  text-overflow: ellipsis;\n  -webkit-box-orient: vertical;\n  -webkit-line-clamp: 2;\n}\n.container-product .content .product-content .product .product-div .price p {\n  padding: 4px;\n  color: red;\n  margin-top: 10px;\n}", ""]);
+exports.push([module.i, ".container-product {\n  left: 0;\n  width: 100%;\n  height: 54px;\n  min-width: 1200px;\n  top: 56px;\n  background: #fff;\n  z-index: 90000;\n  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1);\n}\n.container-product .old-wrapper {\n  width: 1200px;\n  margin: 0 auto;\n  display: -webkit-box;\n  display: flex;\n}\n.container-product .old-wrapper .menu-product {\n  display: -webkit-box;\n  display: flex;\n  width: 60%;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.container-product .old-wrapper .menu-product .item a {\n  margin: 0;\n  padding: 16px 18px 14px;\n  border-bottom: 4px solid transparent;\n  font-size: 16px;\n  text-decoration: none;\n  color: #666;\n  -webkit-transition: opacity 0.2s ease, border-bottom-color 0.2s ease;\n  transition: opacity 0.2s ease, border-bottom-color 0.2s ease;\n  cursor: pointer;\n  line-height: 54px;\n}\n.container-product .content {\n  width: 1200px;\n  margin: auto;\n}\n.container-product .content .old-pr {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n  margin-top: 30px;\n}\n.container-product .content .old-pr .total-product {\n  width: 250px;\n  height: 30px;\n  border: 1px solid red;\n  border-radius: 10px;\n  margin-left: 30px;\n}\n.container-product .content .old-pr .total-product p {\n  line-height: 30px;\n  margin-left: 5px;\n}\n.container-product .content .product-content {\n  width: 100%;\n}\n.container-product .content .product-content .product {\n  float: left;\n  width: 16.6%;\n  height: 275px;\n  padding: 3px;\n}\n.container-product .content .product-content .product .product-div {\n  border: 1px solid transparent;\n  background: white;\n  cursor: pointer;\n}\n.container-product .content .product-content .product .product-div .img img {\n  width: 100%;\n  height: 188px;\n}\n.container-product .content .product-content .product .product-div .name a {\n  padding: 4px;\n  word-wrap: break-word;\n  line-height: 1.125rem;\n  height: 2.25rem;\n  overflow: hidden;\n  display: -webkit-box;\n  text-overflow: ellipsis;\n  -webkit-box-orient: vertical;\n  -webkit-line-clamp: 2;\n}\n.container-product .content .product-content .product .product-div .price p {\n  padding: 4px;\n  color: red;\n  margin-top: 10px;\n}", ""]);
 
 // exports
 
@@ -69375,7 +69375,7 @@ var errors = function errors(_errors) {
 /*!***************************************!*\
   !*** ./resources/js/actions/order.js ***!
   \***************************************/
-/*! exports provided: fetchDataOrder, fetchDataStore, fetchDataOrderDetail, fetchDataDetailStore */
+/*! exports provided: fetchDataOrder, fetchDataStore, fetchDataOrderDetail, fetchDataDetailStore, changeStatusOrder */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69384,6 +69384,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDataStore", function() { return fetchDataStore; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDataOrderDetail", function() { return fetchDataOrderDetail; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDataDetailStore", function() { return fetchDataDetailStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changeStatusOrder", function() { return changeStatusOrder; });
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _constants_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../constants/index */ "./resources/js/constants/index.js");
@@ -69451,6 +69452,43 @@ var fetchDataDetailStore = function fetchDataDetailStore(data) {
     data: data
   };
 };
+var changeStatusOrder = function changeStatusOrder(id) {
+  return (
+    /*#__PURE__*/
+    function () {
+      var _ref2 = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(dispatch) {
+        var data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("".concat(_constants_api__WEBPACK_IMPORTED_MODULE_2__["ROOT_URL"], "/edit/bill/") + id);
+
+              case 2:
+                data = _context2.sent;
+
+              case 3:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }));
+
+      return function (_x2) {
+        return _ref2.apply(this, arguments);
+      };
+    }()
+  );
+}; // export const changeStatusOrderStore = (data) => {
+//     return {
+//         type: Types.FETCH_DATA_ORDER_DETAIL,
+//         data
+//     }
+// }
 
 /***/ }),
 
@@ -70858,13 +70896,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -70883,6 +70923,17 @@ function (_Component) {
     _classCallCheck(this, DetailOrderContainer);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(DetailOrderContainer).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_this), "changeStatus", function () {
+      var match = _this.props.match;
+      var id = match.params.id;
+      console.log(match.params.id);
+
+      _this.props.changeStatusOrder(id);
+
+      _this.props.history.goBack();
+    });
+
     _this.state = {};
     return _this;
   }
@@ -70934,22 +70985,31 @@ function (_Component) {
             className: "total-order"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, item.product.discount * item.qty)));
         });
-      } // if (ordersDetail) {
-      //   return (
-      //     <div className='infor' >
-      //       <p>Địa chỉ nhận hàng</p>
-      //       <p>{ ordersDetail.address } - { ordersDetail.district.name } - { ordersDetail.province.address }</p>
-      //       <p>{ ordersDetail.name }, { ordersDetail.phone }</p>
-      //     </div>
-      //   );
-      // }
+      }
 
+      var button;
+
+      if (ordersDetail.status == 0) {
+        button = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          onClick: this.changeStatus
+        }, "X\xE1c nh\u1EADn \u0111\u01A1n h\xE0ng");
+      } else if (ordersDetail.status == 1) {
+        button = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          onClick: this.changeStatus
+        }, "\u0110\xE3 l\u1EA5y h\xE0ng");
+      } else if (ordersDetail.status == 2) {
+        button = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          onClick: this.changeStatus
+        }, "\u0110\xE3 giao th\xE0nh c\xF4ng");
+      }
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-detail"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "status"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0110\xE3 h\u1EE7y"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Do ng\u01B0\u1EDDi d\xF9ng h\u1EE7y")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0110\xE3 h\u1EE7y"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Do ng\u01B0\u1EDDi d\xF9ng h\u1EE7y"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "button"
+      }, button)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "infor-customer"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "infor"
@@ -71022,6 +71082,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, props) {
   return {
     fetchDataOrderDetail: function fetchDataOrderDetail(id) {
       dispatch(Object(_actions_order__WEBPACK_IMPORTED_MODULE_4__["fetchDataOrderDetail"])(id));
+    },
+    changeStatusOrder: function changeStatusOrder(id) {
+      dispatch(Object(_actions_order__WEBPACK_IMPORTED_MODULE_4__["changeStatusOrder"])(id));
     }
   };
 };
@@ -71121,7 +71184,23 @@ function (_Component) {
         bill = bill.filter(function (item) {
           return item.status === status;
         });
-      }
+      } // let statusBill 
+      // if( bill){
+      //   if( bill.status == 0 ){
+      //     statusBill = <p>Chờ xác nhận</p>
+      //   }else if( bill.status == 1 ){
+      //     statusBill = <p>Chờ lấy hàng</p>
+      //   }else if( bill.status == 2 ){
+      //     statusBill = <p>Đang giao</p>
+      //   }else if( bill.status == 3 ){
+      //     statusBill = <p>Hoàn thành</p>
+      //   }else if( bill.status == 4 ){
+      //     statusBill = <p>Đã hủy</p>
+      //   }else{
+      //     statusBill = <p>Đã hủy</p>
+      //   }
+      // }
+
 
       if (bill) {
         var almProduct = bill.map(function (order, index) {
@@ -71160,7 +71239,7 @@ function (_Component) {
               className: "sum-order"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, item.product.discount)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "status"
-            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "T\xECnh tr\u1EA1ng")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            }, order.status === 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ch\u1EDD x\xE1c nh\u1EADn") : '', order.status === 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ch\u1EDD l\u1EA5y h\xE0ng") : '', order.status === 2 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0110ang giao") : '', order.status === 3 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ho\xE0n th\xE0nh") : '', order.status === 4 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0110\xE3 h\u1EE7y") : ''), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "transport"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Giao h\xE0ng ti\u1EBFt ki\u1EC7m")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "action"
@@ -71199,31 +71278,36 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "menu-product"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "item",
+        onClick: function onClick() {
+          return _this2.queryOrder(-1);
+        },
+        className: status === -1 ? 'active' : 'item'
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "T\u1EA5t c\u1EA3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.queryOrder(0);
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "T\u1EA5t c\u1EA3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "item",
+        },
+        className: status === 0 ? 'active' : 'item'
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Ch\u1EDD x\xE1c nh\u1EADn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.queryOrder(1);
+        },
+        className: status === 1 ? 'active' : 'item'
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Ch\u1EDD l\u1EA5y h\xE0ng")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", _defineProperty({
+        className: "item",
+        onClick: function onClick() {
+          return _this2.queryOrder(2);
         }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Ch\u1EDD x\xE1c nh\u1EADn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "className", status === 2 ? 'active' : 'item'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\u0110ang giao")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", _defineProperty({
         className: "item",
         onClick: function onClick() {
           return _this2.queryOrder(3);
         }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\u0110ang giao")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "className", status === 3 ? 'active' : 'item'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Ho\xE0n th\xE0nh ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", _defineProperty({
         className: "item",
         onClick: function onClick() {
           return _this2.queryOrder(4);
         }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Ho\xE0n th\xE0nh ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "item",
-        onClick: function onClick() {
-          return _this2.queryOrder(5);
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\u0110\xE3 h\u1EE7y")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "className", status === 4 ? 'active' : 'item'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\u0110\xE3 h\u1EE7y")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "old-pr"

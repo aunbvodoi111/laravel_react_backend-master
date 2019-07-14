@@ -41,9 +41,10 @@ Route::get('/list/data','productController@listData');
 Route::get('/delete/unit/{id}','productController@deleteUnit');
 Route::post('/update/unit','productController@updateUnit');
 //cart
-Route::get('/list/cart','CartController@list');
+Route::get('/list/cart','CartController@list'); 
 //bill
 Route::get('/list/bill','BillController@list');
+Route::post('/edit/bill/{id}','BillController@editBill');
 Route::get('/list/bill/detail/{id}','BillController@orderDetail');
 //mail
 Route::get('/send','BillController@sendMail');
