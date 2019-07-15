@@ -60,15 +60,24 @@ class BillController extends Controller
             ]);
     }
     public function editBill( Request $res,$id){
-        $bill = Bill::find($id);
+        $bill = Bill::where('id',$id)->with('bills_detail.product')->first();
+        // dd( $bill->id);
+        
+        
         $bill->status = $bill->status + 1;
         // dd($id);
         $bill->save();
-        
-        $mytime = Carbon::now();
+        if($bill->status == 3){
+            foreach($bill->bills_detail as $bill){
+                // dd($bill);
+                $product = Product::find( $bill->Product_Id );
+                // dd($product);
+                $product->sold = $product->sold + $bill->qty;
+                $product->save();
+            }
+        }
         $dateorder = new Dateorder;
-        
-        $dateorder->BillId = $bill->id;
+        $dateorder->BillId = $id;
         $dateorder->save(); 
         $notification = new Notification;
         $notification->UserIdSaler = $bill->UserIdSaler;
