@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './../../../sass/product/index.scss'
-import './../../../sass/order/index.scss'
+// import './../../../sass/order/index.scss'
 import { connect } from 'react-redux'
 import { withRouter, Link } from 'react-router-dom'
 import { fetchDataOrder } from '../../actions/order'
@@ -22,7 +22,10 @@ class productContainer extends Component {
     this.setState({
       status : e
     })
-    
+  }
+  formatPrice = (value) => {
+    let val = (value / 1).toFixed(0).replace(".", ",");
+    return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
   }
   render() {
     
@@ -112,7 +115,7 @@ class productContainer extends Component {
                       <p>Tổng số lượng: </p>
                     </div>
                     <div className='qty'>
-                      <p>{order.sum}</p>
+                      <p>{this.formatPrice(order.sum) }</p>
                     </div>
                   </div>
                   <div className='sum-price'>
@@ -120,7 +123,7 @@ class productContainer extends Component {
                       <p>Tổng tiền hàng:</p>
                     </div>
                     <div className='sum'>
-                      <p>₫{order.sum}</p>
+                      <p>₫{this.formatPrice(order.sum)}</p>
                     </div>
                   </div>
                 </div>

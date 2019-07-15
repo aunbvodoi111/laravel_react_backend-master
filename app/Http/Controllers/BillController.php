@@ -10,6 +10,7 @@ use App\Bill;
 use App\Bill_detail; 
 use App\Districts;
 use App\Dateorder;
+use App\Rating;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Mail; 
@@ -20,7 +21,7 @@ class BillController extends Controller
     public function list(){
        
         $auth = Auth::User();
-        $orders = Bill::where('UserIdSaler', $auth->id)->with('bills_detail.product')->with('user')->get();
+        $orders = Bill::where('UserIdSaler', $auth->id)->with('bills_detail.product')->with('user')->orderBy('id')->get();
         // $idCart = $cart->UserIdSaler;
         // if (Auth::check()) {
         //     dd(Auth::user());
@@ -74,11 +75,17 @@ class BillController extends Controller
                 // dd($product);
                 $product->sold = $product->sold + $bill->qty;
                 $product->save();
+                $rating = Rating::where('ProductId',$bill->Product_Id )->where('UserId', $bill->UserIdBuyer )->first();
+                if(!is_null(($rating))){
+                    $rating->checkBuy =  1;
+                    $rating->save();
+                }
             }
         }
         $dateorder = new Dateorder;
         $dateorder->BillId = $id;
         $dateorder->save(); 
+        
         $notification = new Notification;
         $notification->UserIdSaler = $bill->UserIdSaler;
         $notification->BillId = $bill->id;

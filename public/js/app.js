@@ -6333,25 +6333,6 @@ exports.push([module.i, ".active a {\n  border-bottom: 4px solid red !important;
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/order/index.scss":
-/*!******************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/sass/order/index.scss ***!
-  \******************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".product-content {\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .name {\n  width: 35%;\n}\n.product-content .sum-order {\n  width: 15%;\n}\n.product-content .status {\n  width: 18%;\n}\n.product-content .transport {\n  width: 14%;\n}\n.product-content .action {\n  width: 14%;\n}\n.product-content .order-view-content {\n  background-color: #fff;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.09);\n  -webkit-transition: box-shadow 0.5s ease;\n  transition: box-shadow 0.5s ease;\n  display: block;\n  margin: 16px 0;\n  width: 100%;\n  color: #404040;\n}\n.product-content .order-view-content .user-buyer {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n  padding: 13px 20px;\n  border-bottom: 1px solid #f6f6f6;\n}\n.product-content .order-view-content .user-buyer .img {\n  width: 4%;\n}\n.product-content .order-view-content .user-buyer .img img {\n  width: 100%;\n  border-radius: 100%;\n}\n.product-content .order-view-content .user-buyer .name-user {\n  color: grey;\n  margin-left: 13px;\n}\n.product-content .order-view-content .content {\n  width: 100%;\n  padding: 20px;\n  margin-bottom: 25px;\n  border-bottom: 1px solid #f6f6f6;\n}\n.product-content .order-view-content .content .product-buyer {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .order-view-content .content .product-buyer .name {\n  width: 35%;\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .order-view-content .content .product-buyer .name .img-product {\n  width: 20%;\n  border-radius: 2px;\n  margin-right: 16px;\n  margin-bottom: 4px;\n  border: 1px solid #e8e8e8;\n  overflow: hidden;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: cover;\n}\n.product-content .order-view-content .content .product-buyer .name .img-product img {\n  width: 100%;\n}\n.product-content .order-view-content .content .product-buyer .name .name-product {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  float: left;\n  width: 70%;\n  clear: left;\n}\n.product-content .order-view-content .content .product-buyer .sum-order {\n  width: 15%;\n}\n.product-content .order-view-content .content .product-buyer .sum-order p {\n  width: 100%;\n  height: 24px;\n  color: #EE4D2D;\n  font-weight: 600;\n  font-size: 16px;\n  text-align: center;\n}\n.product-content .order-view-content .content .product-buyer .status {\n  width: 18%;\n}\n.product-content .order-view-content .content .product-buyer .status p {\n  min-height: 24px;\n  font-size: 16px;\n  font-weight: 600;\n  color: #00bfa5;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.product-content .order-view-content .content .product-buyer .transport {\n  width: 14%;\n}\n.product-content .order-view-content .content .product-buyer .action {\n  width: 14%;\n}\n.product-content .order-view-content .content .product-buyer .action button {\n  width: 80%;\n  color: red;\n  border: red 1px solid;\n  height: 40px;\n  background: white;\n}\n.product-content .order-view-content .total-money {\n  width: 100%;\n}\n.product-content .order-view-content .total-money .total-right {\n  width: 30%;\n  margin-left: auto;\n  padding: 10px;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty .title {\n  width: 40%;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty .title p {\n  font-weight: bold;\n  font-size: 16px;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty .qty {\n  width: 60%;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty .qty p {\n  font-weight: bold;\n  font-size: 18px;\n  color: red;\n}\n.product-content .order-view-content .total-money .total-right .sum-price {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .order-view-content .total-money .total-right .sum-price .title {\n  width: 40%;\n}\n.product-content .order-view-content .total-money .total-right .sum-price .title p {\n  font-weight: bold;\n  font-size: 16px;\n}\n.product-content .order-view-content .total-money .total-right .sum-price .sum {\n  width: 60%;\n}\n.product-content .order-view-content .total-money .total-right .sum-price .sum p {\n  font-weight: bold;\n  font-size: 18px;\n  color: red;\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/product/action.scss":
 /*!*********************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/sass/product/action.scss ***!
@@ -62356,7 +62337,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71106,11 +71087,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _sass_product_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../../sass/product/index.scss */ "./resources/sass/product/index.scss");
 /* harmony import */ var _sass_product_index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_product_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _sass_order_index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../../sass/order/index.scss */ "./resources/sass/order/index.scss");
-/* harmony import */ var _sass_order_index_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sass_order_index_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _actions_order__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../actions/order */ "./resources/js/actions/order.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _actions_order__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../actions/order */ "./resources/js/actions/order.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -71132,7 +71111,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
-
+ // import './../../../sass/order/index.scss'
 
 
 
@@ -71158,6 +71137,11 @@ function (_Component) {
       _this.setState({
         status: e
       });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "formatPrice", function (value) {
+      var val = (value / 1).toFixed(0).replace(".", ",");
+      return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     });
 
     _this.state = {
@@ -71243,7 +71227,7 @@ function (_Component) {
               className: "transport"
             }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Giao h\xE0ng ti\u1EBFt ki\u1EC7m")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
               className: "action"
-            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
               to: {
                 pathname: "/order/detail/".concat(order.id),
                 state: {
@@ -71261,13 +71245,13 @@ function (_Component) {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "T\u1ED5ng s\u1ED1 l\u01B0\u1EE3ng: ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "qty"
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, order.sum))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _this2.formatPrice(order.sum)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "sum-price"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "title"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "T\u1ED5ng ti\u1EC1n h\xE0ng:")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "sum"
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u20AB", order.sum)))))));
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u20AB", _this2.formatPrice(order.sum))))))));
         });
       }
 
@@ -71342,12 +71326,12 @@ var mapStateToProps = function mapStateToProps(state) {
 var mapDispatchToProps = function mapDispatchToProps(dispatch, props) {
   return {
     fetchDataOrder: function fetchDataOrder() {
-      dispatch(Object(_actions_order__WEBPACK_IMPORTED_MODULE_5__["fetchDataOrder"])());
+      dispatch(Object(_actions_order__WEBPACK_IMPORTED_MODULE_4__["fetchDataOrder"])());
     }
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToProps, mapDispatchToProps)(productContainer));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps, mapDispatchToProps)(productContainer));
 
 /***/ }),
 
@@ -71899,13 +71883,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -71918,10 +71904,23 @@ var productContainer =
 function (_Component) {
   _inherits(productContainer, _Component);
 
-  function productContainer() {
+  function productContainer(props) {
+    var _this;
+
     _classCallCheck(this, productContainer);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(productContainer).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(productContainer).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_this), "queryOrder", function (e) {
+      _this.setState({
+        status: e
+      });
+    });
+
+    _this.state = {
+      status: -1
+    };
+    return _this;
   }
 
   _createClass(productContainer, [{
@@ -71932,7 +71931,24 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
+      var status = this.state.status;
       var products = this.props.products;
+
+      if (status == 0) {
+        products = products.filter(function (item) {
+          return item.qty > 0;
+        });
+      } else if (status == 1) {
+        products = products.filter(function (item) {
+          return item.qty === 0;
+        });
+      } else if (status == 3) {
+        products = products.filter(function (item) {
+          return item.status === 1;
+        });
+      }
 
       if (products) {
         var almProduct = products.map(function (product, index) {
@@ -71966,27 +71982,32 @@ function (_Component) {
         className: "old-wrapper"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "menu-product"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, "T\u1EA5t c\u1EA3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, "C\xF2n h\xE0ng")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, "H\u1EBFt h\xE0ng")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, "\u0110\xE3 b\u1ECB kh\xF3a")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, "\u0110\xE3 b\u1ECB \u1EA9n")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", _defineProperty({
+        className: "item",
+        onClick: function onClick() {
+          return _this2.queryOrder(-1);
+        }
+      }, "className", status === -1 ? 'active' : 'item'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "T\u1EA5t c\u1EA3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", _defineProperty({
+        className: "item",
+        onClick: function onClick() {
+          return _this2.queryOrder(0);
+        }
+      }, "className", status === 0 ? 'active' : 'item'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "C\xF2n h\xE0ng")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", _defineProperty({
+        className: "item",
+        onClick: function onClick() {
+          return _this2.queryOrder(1);
+        }
+      }, "className", status === 1 ? 'active' : 'item'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "H\u1EBFt h\xE0ng")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", _defineProperty({
+        className: "item",
+        onClick: function onClick() {
+          return _this2.queryOrder(2);
+        }
+      }, "className", status === 2 ? 'active' : 'item'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\u0110\xE3 b\u1ECB kh\xF3a")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", _defineProperty({
+        className: "item",
+        onClick: function onClick() {
+          return _this2.queryOrder(3);
+        }
+      }, "className", status === 3 ? 'active' : 'item'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\u0110\xE3 b\u1ECB \u1EA9n")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "old-pr"
@@ -72835,36 +72856,6 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/lib/loader.js??ref--7-3!./detail.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/order/detail.scss");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./resources/sass/order/index.scss":
-/*!*****************************************!*\
-  !*** ./resources/sass/order/index.scss ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/lib/loader.js??ref--7-3!./index.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/order/index.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
