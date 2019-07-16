@@ -21,6 +21,7 @@ class productContainer extends Component {
   render() {
     var { status } = this.state
     var { products } = this.props
+    if (!products ) return null;
     if (status == 0) {
       products = products.filter(item => item.qty > 0)
     } else if (status == 1) {
@@ -53,7 +54,7 @@ class productContainer extends Component {
         );
       })
     }
-
+    
     return (
       <div className='container-product'>
         <div className='old-wrapper'>
@@ -84,10 +85,11 @@ class productContainer extends Component {
               <p>1 / 1000</p>
             </div>
           </div>
-          <div className="product-content">
+          { products.length == 0 ? <h1>Không có đơn hàng nào</h1> :<div className="product-content">
             {almProduct}
             {/* <div style=" clear:both;"></div> */}
           </div>
+          }
         </div >
       </div >
     );

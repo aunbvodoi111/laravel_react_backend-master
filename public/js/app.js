@@ -6333,6 +6333,25 @@ exports.push([module.i, ".active a {\n  border-bottom: 4px solid red !important;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/order/index.scss":
+/*!******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/sass/order/index.scss ***!
+  \******************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".product-content {\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .name {\n  width: 35%;\n}\n.product-content .sum-order {\n  width: 15%;\n}\n.product-content .status {\n  width: 18%;\n}\n.product-content .transport {\n  width: 14%;\n}\n.product-content .action {\n  width: 14%;\n}\n.product-content .order-view-content {\n  background-color: #fff;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.09);\n  -webkit-transition: box-shadow 0.5s ease;\n  transition: box-shadow 0.5s ease;\n  display: block;\n  margin: 16px 0;\n  width: 100%;\n  color: #404040;\n}\n.product-content .order-view-content .user-buyer {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n  padding: 13px 20px;\n  border-bottom: 1px solid #f6f6f6;\n}\n.product-content .order-view-content .user-buyer .img {\n  width: 4%;\n}\n.product-content .order-view-content .user-buyer .img img {\n  width: 100%;\n  border-radius: 100%;\n}\n.product-content .order-view-content .user-buyer .name-user {\n  color: grey;\n  margin-left: 13px;\n}\n.product-content .order-view-content .content {\n  width: 100%;\n  padding: 20px;\n  margin-bottom: 25px;\n  border-bottom: 1px solid #f6f6f6;\n}\n.product-content .order-view-content .content .product-buyer {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .order-view-content .content .product-buyer .name {\n  width: 35%;\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .order-view-content .content .product-buyer .name .img-product {\n  width: 20%;\n  border-radius: 2px;\n  margin-right: 16px;\n  margin-bottom: 4px;\n  border: 1px solid #e8e8e8;\n  overflow: hidden;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: cover;\n}\n.product-content .order-view-content .content .product-buyer .name .img-product img {\n  width: 100%;\n}\n.product-content .order-view-content .content .product-buyer .name .name-product {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  float: left;\n  width: 70%;\n  clear: left;\n}\n.product-content .order-view-content .content .product-buyer .sum-order {\n  width: 15%;\n}\n.product-content .order-view-content .content .product-buyer .sum-order p {\n  width: 100%;\n  height: 24px;\n  color: #EE4D2D;\n  font-weight: 600;\n  font-size: 16px;\n  text-align: center;\n}\n.product-content .order-view-content .content .product-buyer .status {\n  width: 18%;\n}\n.product-content .order-view-content .content .product-buyer .status p {\n  min-height: 24px;\n  font-size: 16px;\n  font-weight: 600;\n  color: #00bfa5;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.product-content .order-view-content .content .product-buyer .transport {\n  width: 14%;\n}\n.product-content .order-view-content .content .product-buyer .action {\n  width: 14%;\n}\n.product-content .order-view-content .content .product-buyer .action button {\n  width: 80%;\n  color: red;\n  border: red 1px solid;\n  height: 40px;\n  background: white;\n}\n.product-content .order-view-content .total-money {\n  width: 100%;\n}\n.product-content .order-view-content .total-money .total-right {\n  width: 30%;\n  margin-left: auto;\n  padding: 10px;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty .title {\n  width: 40%;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty .title p {\n  font-weight: bold;\n  font-size: 16px;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty .qty {\n  width: 60%;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty .qty p {\n  font-weight: bold;\n  font-size: 18px;\n  color: red;\n}\n.product-content .order-view-content .total-money .total-right .sum-price {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .order-view-content .total-money .total-right .sum-price .title {\n  width: 40%;\n}\n.product-content .order-view-content .total-money .total-right .sum-price .title p {\n  font-weight: bold;\n  font-size: 16px;\n}\n.product-content .order-view-content .total-money .total-right .sum-price .sum {\n  width: 60%;\n}\n.product-content .order-view-content .total-money .total-right .sum-price .sum p {\n  font-weight: bold;\n  font-size: 18px;\n  color: red;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/product/action.scss":
 /*!*********************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/sass/product/action.scss ***!
@@ -71090,6 +71109,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _actions_order__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../actions/order */ "./resources/js/actions/order.js");
+/* harmony import */ var _sass_order_index_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../../sass/order/index.scss */ "./resources/sass/order/index.scss");
+/* harmony import */ var _sass_order_index_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_sass_order_index_scss__WEBPACK_IMPORTED_MODULE_5__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -71112,6 +71133,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
  // import './../../../sass/order/index.scss'
+
 
 
 
@@ -71168,7 +71190,9 @@ function (_Component) {
         bill = bill.filter(function (item) {
           return item.status === status;
         });
-      } // let statusBill 
+      }
+
+      if (!bill) return null; // let statusBill 
       // if( bill){
       //   if( bill.status == 0 ){
       //     statusBill = <p>Chờ xác nhận</p>
@@ -71184,7 +71208,6 @@ function (_Component) {
       //     statusBill = <p>Đã hủy</p>
       //   }
       // }
-
 
       if (bill) {
         var almProduct = bill.map(function (order, index) {
@@ -71291,7 +71314,7 @@ function (_Component) {
         onClick: function onClick() {
           return _this2.queryOrder(4);
         }
-      }, "className", status === 4 ? 'active' : 'item'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\u0110\xE3 h\u1EE7y")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "className", status === 4 ? 'active' : 'item'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\u0110\xE3 h\u1EE7y")))), bill.length == 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Kh\xF4ng c\xF3 \u0111\u01A1n h\xE0ng n\xE0o") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "old-pr"
@@ -71935,6 +71958,7 @@ function (_Component) {
 
       var status = this.state.status;
       var products = this.props.products;
+      if (!products) return null;
 
       if (status == 0) {
         products = products.filter(function (item) {
@@ -72013,7 +72037,7 @@ function (_Component) {
         className: "old-pr"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "1 S\u1EA3n Ph\u1EA9m")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "total-product"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "1 / 1000"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "1 / 1000"))), products.length == 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Kh\xF4ng c\xF3 \u0111\u01A1n h\xE0ng n\xE0o") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-content"
       }, almProduct)));
     }
@@ -72856,6 +72880,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/lib/loader.js??ref--7-3!./detail.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/order/detail.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/sass/order/index.scss":
+/*!*****************************************!*\
+  !*** ./resources/sass/order/index.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/lib/loader.js??ref--7-3!./index.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/order/index.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 

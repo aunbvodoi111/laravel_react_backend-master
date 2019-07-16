@@ -4,7 +4,7 @@ import './../../../sass/product/index.scss'
 import { connect } from 'react-redux'
 import { withRouter, Link } from 'react-router-dom'
 import { fetchDataOrder } from '../../actions/order'
-
+import './../../../sass/order/index.scss'
 class productContainer extends Component {
   constructor(props){
     super(props)
@@ -36,6 +36,7 @@ class productContainer extends Component {
     if( status > -1){
       bill = bill.filter( item => item.status === status)
     }
+    if (!bill ) return null;
     // let statusBill 
     // if( bill){
     //   if( bill.status == 0 ){
@@ -157,7 +158,7 @@ class productContainer extends Component {
             </div>
           </div>
         </div>
-        <div className='content'>
+        { bill.length == 0 ? <h1>Không có đơn hàng nào</h1> :<div className='content'>
           <div className="old-pr">
             <div>
               <h5>1 Sản Phẩm</h5>
@@ -184,7 +185,7 @@ class productContainer extends Component {
             </div>
           </div>
           {almProduct}
-        </div >
+        </div >}
       </div >
     );
   }
