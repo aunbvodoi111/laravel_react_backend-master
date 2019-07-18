@@ -9,6 +9,7 @@ use App\User;
 use App\Cart;
 use App\Cart_detail;
 use App\Mulimage;
+use App\Classify;
 use Illuminate\Support\Facades\Auth;
 use Log;
 class productController extends Controller
@@ -35,6 +36,16 @@ class productController extends Controller
         $product->CateId =  $request->CateId;
         $product->keyword =  changeTitle($request->name);
         $product->save();
+        foreach ($request->classify as $file) {
+            // dd($file);
+            $classify  = new Classify;
+            $classify->name =  $file['name'];
+            $classify->qty =  $file['qty'];
+            $classify->price =  $file['price'];
+            $classify->discount =  0;
+            $classify->ProductId =  $product->id;
+            $classify->save();
+        }
         foreach ($request->images as $file) {
             // dd($file);
             $mulimage  = new Mulimage;

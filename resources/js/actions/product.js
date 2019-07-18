@@ -39,7 +39,9 @@ export const updateProduct = (id, product) => {
             image: product.image,
             price: product.price,
             CateId: product.CateId,
-            images: product.images
+            images: product.images,
+            nameClassify : nameClassify,
+            classify : classify
         }).then(response => {
             // dispatch(addCateStore(response.data.cate))
         })
@@ -80,7 +82,9 @@ export const addProduct = (product) => {
             image: product.image,
             price: product.price,
             CateId: product.CateId,
-            images: product.images
+            images: product.images,
+            nameClassify : product.nameClassify,
+            classify : product.classify
         }).then(response => {
             dispatch(addCateStore(response.data.cate))
         })

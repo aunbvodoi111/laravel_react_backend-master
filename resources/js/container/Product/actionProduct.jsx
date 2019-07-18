@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './../../../sass/product/action.scss'
 
 import { connect } from 'react-redux'
-import { addProduct, fetchData, editProduct ,updateProduct} from './../../actions/product'
+import { addProduct, fetchData, editProduct, updateProduct } from './../../actions/product'
 class actionProduct extends Component {
   constructor(props) {
     super(props)
@@ -20,7 +20,9 @@ class actionProduct extends Component {
       image: '',
       files: [],
       images: [],
-      index : -1
+      nameClassify: '',
+      index: -1,
+      classify: []
     }
     this.fileSelectedHandler = this.fileSelectedHandler.bind(this);
   }
@@ -58,10 +60,10 @@ class actionProduct extends Component {
         }
       ).then(response => {
         this.state.files = []
-        var image = { image : '/img/' + response.data.result}
+        var image = { image: '/img/' + response.data.result }
         console.log(response)
         console.log(this.state.images)
-        this.setState({ images: [...this.state.images, image ] })
+        this.setState({ images: [...this.state.images, image] })
         console.log(this.state.images)
         // this.setState({
         //   image: '/img/' + response.data.result
@@ -88,7 +90,7 @@ class actionProduct extends Component {
         mass: product.mass,
         image: product.image,
         images: mulimage,
-        index : 0
+        index: 0
       });
     }
   }
@@ -122,8 +124,56 @@ class actionProduct extends Component {
       [e.target.name]: e.target.value
     })
   }
+  onChangeClass = (id, e) => {
+    var { classify } = this.state
+    var index = classify.indexOf(id)
+    classify[index].name = e.target.value;
+
+    // update state
+    this.setState({
+      classify,
+    });
+    console.log(classify)
+  }
+  onChangeQty = (id, e) => {
+    var { classify } = this.state
+    var index = classify.indexOf(id)
+    classify[index].qty = e.target.value;
+
+    // update state
+    this.setState({
+      classify,
+    });
+    console.log(classify)
+  }
+  onChangePrice = (id, e) => {
+    var { classify } = this.state
+    var index = classify.indexOf(id)
+    classify[index].price = e.target.value;
+
+    // update state
+    this.setState({
+      classify,
+    });
+    console.log(classify)
+  }
+  addClass = () => {
+    var { classify } = this.state
+    var id = Math.random()
+    var item = {
+      id: id,
+      name: '',
+      qty: '',
+      price: ''
+    }
+    classify.push(item)
+    console.log(Math.random())
+    this.setState({
+      classify: classify
+    })
+  }
   onClick = () => {
-    var { name, CateId, SubcateId, UnitId, description, discount, price, qty, mass, image, images ,index } = this.state
+    var { name, CateId, SubcateId, UnitId, description, discount, price, qty, mass, image, images, index  , classify , nameClassify} = this.state
     var product = {
       name: name,
       SubcateId: SubcateId,
@@ -135,22 +185,23 @@ class actionProduct extends Component {
       image: image,
       price: price,
       images: images,
-      CateId: CateId
+      CateId: CateId,
+      nameClassify : nameClassify,
+      classify : classify
     }
-    if( index > -1 ){
+    if (index > -1) {
       var id = this.props.match.params.id
       console.log('đây')
-      this.props.updateProduct(id,product)
-    }else{
+      this.props.updateProduct(id, product)
+    } else {
       console.log('k')
       this.props.addProduct(product)
     }
-    
+
   }
   render() {
     var { cates, units, subcates } = this.props
-    var { images } = this.state
-    var { name, CateId, SubcateId, UnitId, description, discount, price, qty, mass, image } = this.state
+    var { name, CateId, SubcateId, UnitId, description, discount, price, qty, mass, image, nameClassify, images, classify } = this.state
     if (units) {
       var elmUnit = units.map((unit, index) => {
         return (
@@ -182,10 +233,32 @@ class actionProduct extends Component {
         );
       })
     }
+    var classifyok = classify.map((item, index) => {
+      return (
+        <div className="form" key={index}>
+          <div className="label">
+            <p>Phân loại hàng {index + 1}</p>
+          </div>
+          <div className="txt-form">
+            <input type="text" className="form-control" onChange={(e) => this.onChangeClass(item, e)} value={item.name} />
+          </div>
+        </div>
+      );
+    })
 
+    var table = classify.map((item, index) => {
+      return (
+        <tr key={index}>
+          <td>{item.name}</td>
+          <td><input type="number" className="form-control" onChange={(e) => this.onChangePrice(item, e)} value={item.price} /></td>
+          <td><input type="number" className="form-control" onChange={(e) => this.onChangeQty(item, e)} value={item.qty} /></td>
+        </tr>
+      );
+    })
     return (
       <div className="container-content">
         <h5>Thông tin cơ bản</h5>
+
         <div className="form">
           <div className="label">
             <p>*Chọn danh mục</p>
@@ -218,12 +291,36 @@ class actionProduct extends Component {
         </div>
         <div className="form">
           <div className="label">
+            <p>*Tên nhóm phân loại</p>
+          </div>
+          <div className="txt-form">
+            <input type="text" className="form-control" onChange={this.onChange} value={nameClassify} name="nameClassify" />
+          </div>
+        </div>
+        {classifyok}
+        <button onClick={this.addClass}>Thêm</button>
+        <table className="table">
+          <thead>
+            <tr>
+              {nameClassify === '' ? <th scope="col">Tên</th> : <th scope="col">{nameClassify}</th>}
+              <th scope="col">Gía</th>
+              <th scope="col">Kho hàng</th>
+            </tr>
+          </thead>
+          <tbody>
+            {table}
+          </tbody>
+        </table>
+        <div className="form">
+          <div className="label">
             <p>*Tên sản phẩm</p>
           </div>
           <div className="txt-form">
             <input type="text" className="form-control" onChange={this.onChange} value={name} name="name" />
           </div>
         </div>
+
+
         <div className="form">
           <div className="label">
             <p>*Giá</p>
@@ -299,8 +396,8 @@ const mapDispatchToProps = (dispatch, props) => {
     editProduct: (id) => {
       dispatch(editProduct(id))
     },
-    updateProduct : (id,product)=>{
-      dispatch(updateProduct(id,product))
+    updateProduct: (id, product) => {
+      dispatch(updateProduct(id, product))
     }
   }
 }

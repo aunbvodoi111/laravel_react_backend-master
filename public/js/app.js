@@ -69556,7 +69556,9 @@ var updateProduct = function updateProduct(id, product) {
       image: product.image,
       price: product.price,
       CateId: product.CateId,
-      images: product.images
+      images: product.images,
+      nameClassify: nameClassify,
+      classify: classify
     }).then(function (response) {// dispatch(addCateStore(response.data.cate))
     })["catch"](function (error) {
       if (error.response) {
@@ -69591,7 +69593,9 @@ var addProduct = function addProduct(product) {
       image: product.image,
       price: product.price,
       CateId: product.CateId,
-      images: product.images
+      images: product.images,
+      nameClassify: product.nameClassify,
+      classify: product.classify
     }).then(function (response) {
       dispatch(addCateStore(response.data.cate));
     })["catch"](function (error) {
@@ -71449,6 +71453,59 @@ function (_Component) {
       _this.setState(_defineProperty({}, e.target.name, e.target.value));
     });
 
+    _defineProperty(_assertThisInitialized(_this), "onChangeClass", function (id, e) {
+      var classify = _this.state.classify;
+      var index = classify.indexOf(id);
+      classify[index].name = e.target.value; // update state
+
+      _this.setState({
+        classify: classify
+      });
+
+      console.log(classify);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onChangeQty", function (id, e) {
+      var classify = _this.state.classify;
+      var index = classify.indexOf(id);
+      classify[index].qty = e.target.value; // update state
+
+      _this.setState({
+        classify: classify
+      });
+
+      console.log(classify);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onChangePrice", function (id, e) {
+      var classify = _this.state.classify;
+      var index = classify.indexOf(id);
+      classify[index].price = e.target.value; // update state
+
+      _this.setState({
+        classify: classify
+      });
+
+      console.log(classify);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "addClass", function () {
+      var classify = _this.state.classify;
+      var id = Math.random();
+      var item = {
+        id: id,
+        name: '',
+        qty: '',
+        price: ''
+      };
+      classify.push(item);
+      console.log(Math.random());
+
+      _this.setState({
+        classify: classify
+      });
+    });
+
     _defineProperty(_assertThisInitialized(_this), "onClick", function () {
       var _this$state = _this.state,
           name = _this$state.name,
@@ -71462,7 +71519,9 @@ function (_Component) {
           mass = _this$state.mass,
           image = _this$state.image,
           images = _this$state.images,
-          index = _this$state.index;
+          index = _this$state.index,
+          classify = _this$state.classify,
+          nameClassify = _this$state.nameClassify;
       var product = {
         name: name,
         SubcateId: SubcateId,
@@ -71474,7 +71533,9 @@ function (_Component) {
         image: image,
         price: price,
         images: images,
-        CateId: CateId
+        CateId: CateId,
+        nameClassify: nameClassify,
+        classify: classify
       };
 
       if (index > -1) {
@@ -71503,7 +71564,9 @@ function (_Component) {
       image: '',
       files: [],
       images: [],
-      index: -1
+      nameClassify: '',
+      index: -1,
+      classify: []
     };
     _this.fileSelectedHandler = _this.fileSelectedHandler.bind(_assertThisInitialized(_this));
     return _this;
@@ -71660,11 +71723,12 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this3 = this;
+
       var _this$props = this.props,
           cates = _this$props.cates,
           units = _this$props.units,
           subcates = _this$props.subcates;
-      var images = this.state.images;
       var _this$state2 = this.state,
           name = _this$state2.name,
           CateId = _this$state2.CateId,
@@ -71675,7 +71739,10 @@ function (_Component) {
           price = _this$state2.price,
           qty = _this$state2.qty,
           mass = _this$state2.mass,
-          image = _this$state2.image;
+          image = _this$state2.image,
+          nameClassify = _this$state2.nameClassify,
+          images = _this$state2.images,
+          classify = _this$state2.classify;
 
       if (units) {
         var elmUnit = units.map(function (unit, index) {
@@ -71716,6 +71783,42 @@ function (_Component) {
         });
       }
 
+      var classifyok = classify.map(function (item, index) {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "form",
+          key: index
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "label"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Ph\xE2n lo\u1EA1i h\xE0ng ", index + 1)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "txt-form"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+          type: "text",
+          className: "form-control",
+          onChange: function onChange(e) {
+            return _this3.onChangeClass(item, e);
+          },
+          value: item.name
+        })));
+      });
+      var table = classify.map(function (item, index) {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", {
+          key: index
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, item.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+          type: "number",
+          className: "form-control",
+          onChange: function onChange(e) {
+            return _this3.onChangePrice(item, e);
+          },
+          value: item.price
+        })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+          type: "number",
+          className: "form-control",
+          onChange: function onChange(e) {
+            return _this3.onChangeQty(item, e);
+          },
+          value: item.qty
+        })));
+      });
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-content"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Th\xF4ng tin c\u01A1 b\u1EA3n"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -71752,6 +71855,30 @@ function (_Component) {
         value: UnitId,
         name: "UnitId"
       }, elmUnit))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "label"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "*T\xEAn nh\xF3m ph\xE2n lo\u1EA1i")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "txt-form"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "text",
+        className: "form-control",
+        onChange: this.onChange,
+        value: nameClassify,
+        name: "nameClassify"
+      }))), classifyok, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+        onClick: this.addClass
+      }, "Th\xEAm"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
+        className: "table"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, nameClassify === '' ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        scope: "col"
+      }, "T\xEAn") : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        scope: "col"
+      }, nameClassify), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        scope: "col"
+      }, "G\xEDa"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        scope: "col"
+      }, "Kho h\xE0ng"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tbody", null, table)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "form"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "label"
