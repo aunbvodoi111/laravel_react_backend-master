@@ -82,6 +82,18 @@ class BillController extends Controller
                 }
             }
         }
+        $statusBill = $bill->status;
+        $title = 'Xác nhận đơn hàng';
+        $content = 'Đon hàng của bạn đã được xác nhận ';
+        if($statusBill == 1){
+            $title = 'Đơn hàng đã được giao cho đơn vị vận chuyển';
+            $content = 'Đon hàng của bạn đã được giao cho đơn vị vận chuyển vui lòng nhấn kiểm tra trạng thái đơn hàng  ';
+        }else if($statusBill == 2 ){
+            $title = 'Đơn hàng đã giao hoàn thành ';
+            $content = 'Đon hàng của bạn đã được giao hoàn thành . Vui lòng vào xác nhận là bạn đã nhận được hàng .Xin cảm ơn !  ';
+        }else if( $statusBill == 1){
+            
+        }
         $dateorder = new Dateorder;
         $dateorder->BillId = $id;
         $dateorder->save(); 
@@ -90,7 +102,8 @@ class BillController extends Controller
         $notification->UserIdSaler = $bill->UserIdSaler;
         $notification->BillId = $bill->id;
         $notification->UserIdBuyer = $bill->UserIdBuyer;
-        $notification->content = 'Đon hàng của bạn đã được xác nhận ';
+        $notification->title = $title;
+        $notification->content = $content;
         $notification->status = 0 ;
         $notification->save();
         $data=
