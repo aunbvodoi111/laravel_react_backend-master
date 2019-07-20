@@ -91,6 +91,7 @@ class BillController extends Controller
         $notification->BillId = $bill->id;
         $notification->UserIdBuyer = $bill->UserIdBuyer;
         $notification->content = 'Đon hàng của bạn đã được xác nhận ';
+        $notification->status = 0 ;
         $notification->save();
         $data=
             [
