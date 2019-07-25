@@ -7,7 +7,8 @@ var initialState = {
     units: [],
     products: [],
     product:{},
-    mulimage :[]
+    mulimage :[],
+    classify :[]
 }
 var findIndex = (subcates, id) => {
     var result = -1;
@@ -26,11 +27,11 @@ const product = (state = initialState, action) => {
         // case Types.ERRORS:
         //     return { errors: [...action.errors], cates: state.cates };
         case Types.LIST_DATA:
-            return { cates: [...action.data.cates], subcates: [...action.data.subcates], units: [...action.data.units] };
+            return { cates: [...action.data.cates], subcates: [...action.data.subcates], units: [...action.data.units],  };
         case Types.LIST_PRODUCT:
             return { products: [...action.products] };
         case Types.EDIT_PRODUCT:
-            return { product: action.product.product , mulimage :[...action.product.mulimage]};
+            return { product: action.product.product , mulimage :[...action.product.mulimage], classify:[...action.product.classify]};
         // case Types.UPDATE_CATE:
         //     index = findIndex(state.cates, cate.id);
         //     state.cates[index] = cate;

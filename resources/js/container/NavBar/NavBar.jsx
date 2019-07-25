@@ -26,7 +26,7 @@ class NavBar extends Component {
         <div className="nav">
           <div className="nav-right">
             <Link to='/'>
-              <p>Shopee - Kênh Người bán</p>
+              <p>PhamQuyShop - Kênh Người bán</p>
             </Link>
           </div>
           <div className="nav-left">

@@ -21,16 +21,7 @@ class BillController extends Controller
     public function list(){
        
         $auth = Auth::User();
-        $orders = Bill::where('UserIdSaler', $auth->id)->with('bills_detail.product')->with('user')->orderBy('id')->get();
-        // $idCart = $cart->UserIdSaler;
-        // if (Auth::check()) {
-        //     dd(Auth::user());
-        // }
-        // $users = Cart::with(['carts_detail' => function ($query) {
-        //     // $idCart = $cart->UserIdSaler;
-        //     $query->where('UserIdSaler', 1)::with('products');
-        // }])->get();
-        // $orders = Cart::with('user')->with('carts_detail.products')->where('UserIdSaler', $idCart)->first();
+        $orders = Bill::where('UserIdSaler', $auth->id)->with('bills_detail.product')->with('user')->orderBy('id','DESC')->get();
         return response([
             'orders'=>$orders
         ]);
@@ -60,9 +51,36 @@ class BillController extends Controller
                 'data' => $data
             ]);
     }
+    public function queryDateBill(Request $res){
+        // dd($res->status);
+        $auth = Auth::User();
+        if($res->status == -1){
+            $orders = Bill::whereBetween('created_at', [$res->dateStart, $res->dateEnd])
+            ->where('UserIdSaler', $auth->id)->with('bills_detail.product')->with('user')->orderBy('id','DESC')->get();
+        }else if($res->status == 0){
+            $orders = Bill::whereBetween('created_at', [$res->dateStart, $res->dateEnd])->where('status',0)
+            ->where('UserIdSaler', $auth->id)->with('bills_detail.product')->with('user')->orderBy('id','DESC')->get();
+        }else if($res->status == 1){
+            $orders = Bill::whereBetween('created_at', [$res->dateStart, $res->dateEnd])->where('status',1)
+            ->where('UserIdSaler', $auth->id)->with('bills_detail.product')->with('user')->orderBy('id','DESC')->get();
+        }else if($res->status == 2){
+            $orders = Bill::whereBetween('created_at', [$res->dateStart, $res->dateEnd])->where('status',2)
+            ->where('UserIdSaler', $auth->id)->with('bills_detail.product')->with('user')->orderBy('id','DESC')->get();
+        }else if($res->status == 3){
+            $orders = Bill::whereBetween('created_at', [$res->dateStart, $res->dateEnd])->where('status',3)
+            ->where('UserIdSaler', $auth->id)->with('bills_detail.product')->with('user')->orderBy('id','DESC')->get();
+        }else if($res->status == 4){
+            $orders = Bill::whereBetween('created_at', [$res->dateStart, $res->dateEnd])->where('status',4)
+            ->where('UserIdSaler', $auth->id)->with('bills_detail.product')->with('user')->orderBy('id','DESC')->get();
+        }
+        
+        return response([
+            'orders' => $orders
+        ]);
+    }
     public function editBill( Request $res,$id){
-        $bill = Bill::where('id',$id)->with('bills_detail.product')->first();
-        // dd( $bill->id);
+        $bill = Bill::where('id',$id)->with('bills_detail.product')->with('user')->first();
+        // dd( $bill);
         
         
         $bill->status = $bill->status + 1;
@@ -107,17 +125,16 @@ class BillController extends Controller
         $notification->status = 0 ;
         $notification->save();
         $data=
-            [
-                'name'=>'name',
-                'date_order'=>'name',
-                'sum'=>'name',
-                
-            ];
+        [
+            'name' => 'anhquy',
+            'bill'=>$bill,    
+            'email'=>$bill->user->email      
+        ];
         Mail::send('mail.mail',$data,function($message) use($data){
-            $message->from('phamquycntta@gmail.com','anhquy');
-            $message->to('phamqucntta11@gmail.com');
-            $message->subject('ok');
-            });
+        $message->from('phamquycntta@gmail.com','anhquy');
+        $message->to('phamqucntta11@gmail.com');
+        $message->subject($data['name']);
+        });
             return response([
                 'data' => $data
             ]);

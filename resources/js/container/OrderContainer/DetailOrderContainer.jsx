@@ -27,6 +27,10 @@ class DetailOrderContainer extends Component {
     this.props.changeStatusOrder(id)
     this.props.history.goBack();
   }
+  formatPrice = (value) => {
+    let val = (value / 1).toFixed(0).replace(".", ",");
+    return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
   render() {
     var { ordersDetail } = this.props
     var bills_detail
@@ -51,39 +55,52 @@ class DetailOrderContainer extends Component {
               </div>
             </div>
             <div className='price-order'>
-              <p>{item.product.discount}</p>
+              <p>{this.formatPrice(item.product.discount)}</p>
             </div>
             <div className='qty-order'>
               <p>1</p>
             </div>
             <div className='total-order'>
-              <p>{item.product.discount * item.qty}</p>
+              <p>{this.formatPrice(item.product.discount * item.qty)}</p>
             </div>
           </div>
         );
       })
     }
-    let button 
-    if (ordersDetail.status == 0 ) {
-      button =  <button onClick ={ this.changeStatus }>Xác nhận đơn hàng</button>
-    }else if( ordersDetail.status == 1 ){
-      button =  <button onClick ={ this.changeStatus }>Đã lấy hàng</button>
+    let status
+    if (ordersDetail.status == 0 ) {   
+      status = <p>Đơn hàng đang đợi xác nhận</p>
+    }else if( ordersDetail.status == 1 ){     
+      status = <p>Đơn hàng đã được xác nhận</p>
     }
     else if( ordersDetail.status == 2 ){
-      button =  <button onClick ={ this.changeStatus }>Đã giao thành công</button>
+      status = <p>Đơn hàng đã giao cho đơn vị vận chuyển</p>
+    }
+    else if( ordersDetail.status == 3 ){
+      status = <p>Đơn hàng đã giao được giao</p>
+    }
+    let button 
+    if (ordersDetail.status == 0 ) {
+      button =  <button onClick ={ this.changeStatus } className='btn btn-danger'>Xác nhận đơn hàng</button>
+    }else if( ordersDetail.status == 1 ){
+      button =  <button onClick ={ this.changeStatus } className='btn btn-danger'>Đã lấy hàng</button>
+    }
+    else if( ordersDetail.status == 2 ){
+      button =  <button onClick ={ this.changeStatus } className='btn btn-danger'>Đã giao thành công</button>
+      {ordersDetail.note === '' ? '' : <p>Lời nhắn người mua : { ordersDetail.note }</p>}
     }
     return (
       <div className='container-detail'>
         <div className='status'>
-          <p>Đã hủy</p>
-          <span>Do người dùng hủy</span>
+          {/* <p>Đã hủy</p> */}
+          { status }
           <div className='button'>
             { button }
           </div>
         </div>
         <div className='infor-customer'>
           <div className='infor'>
-            <p>ID Đơn hàng</p>
+            <p>ID Đơn hàng : { ordersDetail.id }</p>
             <span>{ordersDetail ? ordersDetail.id + '-' + ordersDetail.address.district.name : ''}</span>
           </div>
           <div className='infor'>
@@ -102,7 +119,7 @@ class DetailOrderContainer extends Component {
               <img src="https://cf.shopee.vn/file/aaa24a79e7015ab1d6c73392b4b54c93" alt="" />
             </div>
             <div className='name-user'>
-              <strong>phamquy96cn</strong>
+              <strong>{ordersDetail.user.name}</strong>
             </div>
           </div>
           <div className='infor'>
@@ -134,7 +151,7 @@ class DetailOrderContainer extends Component {
                     <p>Tổng tiền sản phẩm</p>
                   </div>
                   <div className='div-sum'>
-                    <p>₫{ordersDetail ? ordersDetail.sum : ''}</p>
+                    <p>₫{ordersDetail ? this.formatPrice(ordersDetail.sum) : ''}</p>
                   </div>
                 </div>
                 <div className='div'>

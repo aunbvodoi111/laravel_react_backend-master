@@ -6288,7 +6288,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".container-home {\n  width: 1000px;\n  margin: auto;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.container-home .title {\n  width: 100%;\n  height: 60px;\n}\n.container-home .title h1 {\n  padding: 20px;\n  text-align: center;\n}\n.container-home .content-home {\n  width: 100%;\n  -webkit-box-align: center;\n          align-items: center;\n  margin-top: 100px;\n}\n.container-home .content-home .item-menu-home {\n  width: 20%;\n  padding: 30px;\n  float: left;\n  text-align: center;\n  position: relative;\n  cursor: pointer;\n}\n.container-home .content-home .item-menu-home .img {\n  position: relative;\n}\n.container-home .content-home .item-menu-home .img img {\n  width: 100%;\n  border-radius: 100%;\n}\n.container-home .content-home .item-menu-home .img i {\n  position: absolute;\n  top: 35%;\n  color: white;\n  font-size: 35px;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n.container-home .content-home .item-menu-home h3 {\n  margin-top: 10px;\n  color: grey;\n  font-size: 14px;\n}", ""]);
+exports.push([module.i, ".container-home {\n  width: 1000px;\n  margin: auto;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.container-home .title {\n  width: 100%;\n  height: 60px;\n}\n.container-home .title h1 {\n  padding: 20px;\n  text-align: center;\n}\n.container-home .content-home {\n  width: 100%;\n  -webkit-box-align: center;\n          align-items: center;\n  margin-top: 100px;\n}\n.container-home .content-home .item-menu-home {\n  width: 20%;\n  padding: 30px;\n  float: left;\n  text-align: center;\n  position: relative;\n  cursor: pointer;\n}\n.container-home .content-home .item-menu-home .img {\n  position: relative;\n  width: 100%;\n}\n.container-home .content-home .item-menu-home .img img {\n  width: 100%;\n  border-radius: 100%;\n}\n.container-home .content-home .item-menu-home .img i {\n  position: absolute;\n  top: 35%;\n  color: white;\n  font-size: 35px;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n.container-home .content-home .item-menu-home h3 {\n  margin-top: 10px;\n  color: grey;\n  font-size: 14px;\n}", ""]);
 
 // exports
 
@@ -6345,7 +6345,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".product-content {\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .name {\n  width: 35%;\n}\n.product-content .sum-order {\n  width: 15%;\n}\n.product-content .status {\n  width: 18%;\n}\n.product-content .transport {\n  width: 14%;\n}\n.product-content .action {\n  width: 14%;\n}\n.product-content .order-view-content {\n  background-color: #fff;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.09);\n  -webkit-transition: box-shadow 0.5s ease;\n  transition: box-shadow 0.5s ease;\n  display: block;\n  margin: 16px 0;\n  width: 100%;\n  color: #404040;\n}\n.product-content .order-view-content .user-buyer {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n  padding: 13px 20px;\n  border-bottom: 1px solid #f6f6f6;\n}\n.product-content .order-view-content .user-buyer .img {\n  width: 4%;\n}\n.product-content .order-view-content .user-buyer .img img {\n  width: 100%;\n  border-radius: 100%;\n}\n.product-content .order-view-content .user-buyer .name-user {\n  color: grey;\n  margin-left: 13px;\n}\n.product-content .order-view-content .content {\n  width: 100%;\n  padding: 20px;\n  margin-bottom: 25px;\n  border-bottom: 1px solid #f6f6f6;\n}\n.product-content .order-view-content .content .product-buyer {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .order-view-content .content .product-buyer .name {\n  width: 35%;\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .order-view-content .content .product-buyer .name .img-product {\n  width: 20%;\n  border-radius: 2px;\n  margin-right: 16px;\n  margin-bottom: 4px;\n  border: 1px solid #e8e8e8;\n  overflow: hidden;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: cover;\n}\n.product-content .order-view-content .content .product-buyer .name .img-product img {\n  width: 100%;\n}\n.product-content .order-view-content .content .product-buyer .name .name-product {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  float: left;\n  width: 70%;\n  clear: left;\n}\n.product-content .order-view-content .content .product-buyer .sum-order {\n  width: 15%;\n}\n.product-content .order-view-content .content .product-buyer .sum-order p {\n  width: 100%;\n  height: 24px;\n  color: #EE4D2D;\n  font-weight: 600;\n  font-size: 16px;\n  text-align: center;\n}\n.product-content .order-view-content .content .product-buyer .status {\n  width: 18%;\n}\n.product-content .order-view-content .content .product-buyer .status p {\n  min-height: 24px;\n  font-size: 16px;\n  font-weight: 600;\n  color: #00bfa5;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.product-content .order-view-content .content .product-buyer .transport {\n  width: 14%;\n}\n.product-content .order-view-content .content .product-buyer .action {\n  width: 14%;\n}\n.product-content .order-view-content .content .product-buyer .action button {\n  width: 80%;\n  color: red;\n  border: red 1px solid;\n  height: 40px;\n  background: white;\n}\n.product-content .order-view-content .total-money {\n  width: 100%;\n}\n.product-content .order-view-content .total-money .total-right {\n  width: 30%;\n  margin-left: auto;\n  padding: 10px;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty .title {\n  width: 40%;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty .title p {\n  font-weight: bold;\n  font-size: 16px;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty .qty {\n  width: 60%;\n}\n.product-content .order-view-content .total-money .total-right .sum-qty .qty p {\n  font-weight: bold;\n  font-size: 18px;\n  color: red;\n}\n.product-content .order-view-content .total-money .total-right .sum-price {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.product-content .order-view-content .total-money .total-right .sum-price .title {\n  width: 40%;\n}\n.product-content .order-view-content .total-money .total-right .sum-price .title p {\n  font-weight: bold;\n  font-size: 16px;\n}\n.product-content .order-view-content .total-money .total-right .sum-price .sum {\n  width: 60%;\n}\n.product-content .order-view-content .total-money .total-right .sum-price .sum p {\n  font-weight: bold;\n  font-size: 18px;\n  color: red;\n}", ""]);
+exports.push([module.i, ".bill-content {\n  display: -webkit-box;\n  display: flex;\n}\n.bill-content .name {\n  width: 35%;\n}\n.bill-content .sum-order {\n  width: 15%;\n}\n.bill-content .status {\n  width: 18%;\n}\n.bill-content .transport {\n  width: 14%;\n}\n.bill-content .action {\n  width: 14%;\n}\n.bill-content .order-view-content {\n  background-color: #fff;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.09);\n  -webkit-transition: box-shadow 0.5s ease;\n  transition: box-shadow 0.5s ease;\n  display: block;\n  margin: 16px 0;\n  width: 100%;\n  color: #404040;\n}\n.bill-content .order-view-content .user-buyer {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n  padding: 13px 20px;\n  border-bottom: 1px solid #f6f6f6;\n}\n.bill-content .order-view-content .user-buyer .img {\n  width: 4%;\n}\n.bill-content .order-view-content .user-buyer .img img {\n  width: 100%;\n  border-radius: 100%;\n}\n.bill-content .order-view-content .user-buyer .name-user {\n  color: grey;\n  margin-left: 13px;\n}\n.bill-content .order-view-content .content {\n  width: 100%;\n  padding: 20px;\n  margin-bottom: 25px;\n  border-bottom: 1px solid #f6f6f6;\n}\n.bill-content .order-view-content .content .product-buyer {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.bill-content .order-view-content .content .product-buyer .name {\n  width: 35%;\n  display: -webkit-box;\n  display: flex;\n}\n.bill-content .order-view-content .content .product-buyer .name .img-product {\n  width: 20%;\n  border-radius: 2px;\n  margin-right: 16px;\n  margin-bottom: 4px;\n  border: 1px solid #e8e8e8;\n  overflow: hidden;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: cover;\n}\n.bill-content .order-view-content .content .product-buyer .name .img-product img {\n  width: 100%;\n}\n.bill-content .order-view-content .content .product-buyer .name .name-product {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  float: left;\n  width: 70%;\n  clear: left;\n}\n.bill-content .order-view-content .content .product-buyer .sum-order {\n  width: 15%;\n}\n.bill-content .order-view-content .content .product-buyer .sum-order p {\n  width: 100%;\n  height: 24px;\n  color: #EE4D2D;\n  font-weight: 600;\n  font-size: 16px;\n  text-align: center;\n}\n.bill-content .order-view-content .content .product-buyer .status {\n  width: 18%;\n}\n.bill-content .order-view-content .content .product-buyer .status p {\n  min-height: 24px;\n  font-size: 16px;\n  font-weight: 600;\n  color: #00bfa5;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.bill-content .order-view-content .content .product-buyer .transport {\n  width: 14%;\n}\n.bill-content .order-view-content .content .product-buyer .action {\n  width: 14%;\n}\n.bill-content .order-view-content .content .product-buyer .action button {\n  width: 80%;\n  color: red;\n  border: red 1px solid;\n  height: 40px;\n  background: white;\n}\n.bill-content .order-view-content .total-money {\n  width: 100%;\n}\n.bill-content .order-view-content .total-money .total-right {\n  width: 30%;\n  margin-left: auto;\n  padding: 10px;\n}\n.bill-content .order-view-content .total-money .total-right .sum-qty {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.bill-content .order-view-content .total-money .total-right .sum-qty .title {\n  width: 40%;\n}\n.bill-content .order-view-content .total-money .total-right .sum-qty .title p {\n  font-weight: bold;\n  font-size: 16px;\n}\n.bill-content .order-view-content .total-money .total-right .sum-qty .qty {\n  width: 60%;\n}\n.bill-content .order-view-content .total-money .total-right .sum-qty .qty p {\n  font-weight: bold;\n  font-size: 18px;\n  color: red;\n}\n.bill-content .order-view-content .total-money .total-right .sum-price {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.bill-content .order-view-content .total-money .total-right .sum-price .title {\n  width: 40%;\n}\n.bill-content .order-view-content .total-money .total-right .sum-price .title p {\n  font-weight: bold;\n  font-size: 16px;\n}\n.bill-content .order-view-content .total-money .total-right .sum-price .sum {\n  width: 60%;\n}\n.bill-content .order-view-content .total-money .total-right .sum-price .sum p {\n  font-weight: bold;\n  font-size: 18px;\n  color: red;\n}", ""]);
 
 // exports
 
@@ -6364,7 +6364,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".container-content {\n  width: 1050px;\n  margin: auto;\n  margin-top: 20px;\n  padding: 32px 40px;\n  margin-bottom: 15px;\n  background-color: #fff;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.09);\n}\n.container-content h5 {\n  font-weight: bold;\n}\n.container-content .form {\n  margin-top: 20px;\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.container-content .form .label {\n  width: 20%;\n}\n.container-content .form .label p {\n  margin-left: 20px;\n}\n.container-content .form button {\n  width: 130px;\n  height: 35px;\n  margin-left: 20px;\n}\n.container-content .form button:nth-child(1) {\n  background: red;\n  color: white;\n  border: 1px solid red;\n}\n.container-content .form button:nth-child(2) {\n  background: white;\n  color: black;\n  border: 1px solid grey;\n}\n.container-content .form .txt-form {\n  width: 80%;\n}\n.container-content .form .txt-form .form-control {\n  width: 100%;\n  height: 35px;\n}\n.container-content .form .txt-form .form-control-textarea {\n  width: 100%;\n  padding: 10px;\n  border: 1px solid #ced4da;\n}\n\n.img {\n  width: 100px;\n}", ""]);
+exports.push([module.i, ".container-content {\n  width: 1050px;\n  margin: auto;\n  margin-top: 20px;\n  padding: 32px 40px;\n  margin-bottom: 15px;\n  background-color: #fff;\n  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.09);\n}\n.container-content h5 {\n  font-weight: bold;\n}\n.container-content .form {\n  margin-top: 20px;\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n}\n.container-content .form .label {\n  width: 20%;\n}\n.container-content .form .label p {\n  margin-left: 20px;\n}\n.container-content .form button {\n  width: 130px;\n  height: 35px;\n  margin-left: 20px;\n}\n.container-content .form button:nth-child(1) {\n  background: red;\n  color: white;\n  border: 1px solid red;\n}\n.container-content .form button:nth-child(2) {\n  background: white;\n  color: black;\n  border: 1px solid grey;\n}\n.container-content .form .txt-form {\n  width: 80%;\n}\n.container-content .form .txt-form .form-control {\n  width: 100%;\n  height: 35px;\n}\n.container-content .form .txt-form .form-control-textarea {\n  width: 100%;\n  padding: 10px;\n  border: 1px solid #ced4da;\n}\n\n.img {\n  width: 100px;\n}\n\n.image {\n  width: 200px;\n  padding: 20px;\n}\n\n.images {\n  width: 200px;\n  padding: 20px;\n}\n\n.row {\n  margin-top: 20px;\n}\n\n.name-date {\n  padding: 0px;\n}\n.name-date p {\n  margin-left: 30px;\n}", ""]);
 
 // exports
 
@@ -6383,7 +6383,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".container-product {\n  left: 0;\n  width: 100%;\n  height: 54px;\n  min-width: 1200px;\n  top: 56px;\n  background: #fff;\n  z-index: 90000;\n  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1);\n}\n.container-product .old-wrapper {\n  width: 1200px;\n  margin: 0 auto;\n  display: -webkit-box;\n  display: flex;\n}\n.container-product .old-wrapper .menu-product {\n  display: -webkit-box;\n  display: flex;\n  width: 60%;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.container-product .old-wrapper .menu-product .item a {\n  margin: 0;\n  padding: 16px 18px 14px;\n  border-bottom: 4px solid transparent;\n  font-size: 16px;\n  text-decoration: none;\n  color: #666;\n  -webkit-transition: opacity 0.2s ease, border-bottom-color 0.2s ease;\n  transition: opacity 0.2s ease, border-bottom-color 0.2s ease;\n  cursor: pointer;\n  line-height: 54px;\n}\n.container-product .content {\n  width: 1200px;\n  margin: auto;\n}\n.container-product .content .old-pr {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n  margin-top: 30px;\n}\n.container-product .content .old-pr .total-product {\n  width: 250px;\n  height: 30px;\n  border: 1px solid red;\n  border-radius: 10px;\n  margin-left: 30px;\n}\n.container-product .content .old-pr .total-product p {\n  line-height: 30px;\n  margin-left: 5px;\n}\n.container-product .content .product-content {\n  width: 100%;\n}\n.container-product .content .product-content .product {\n  float: left;\n  width: 16.6%;\n  height: 275px;\n  padding: 3px;\n}\n.container-product .content .product-content .product .product-div {\n  border: 1px solid transparent;\n  background: white;\n  cursor: pointer;\n}\n.container-product .content .product-content .product .product-div .img img {\n  width: 100%;\n  height: 188px;\n}\n.container-product .content .product-content .product .product-div .name a {\n  padding: 4px;\n  word-wrap: break-word;\n  line-height: 1.125rem;\n  height: 2.25rem;\n  overflow: hidden;\n  display: -webkit-box;\n  text-overflow: ellipsis;\n  -webkit-box-orient: vertical;\n  -webkit-line-clamp: 2;\n}\n.container-product .content .product-content .product .product-div .price p {\n  padding: 4px;\n  color: red;\n  margin-top: 10px;\n}", ""]);
+exports.push([module.i, ".container-product {\n  left: 0;\n  width: 100%;\n  height: 54px;\n  min-width: 1200px;\n  top: 56px;\n  background: #fff;\n  z-index: 90000;\n  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1);\n}\n.container-product .old-wrapper {\n  width: 1200px;\n  margin: 0 auto;\n  display: -webkit-box;\n  display: flex;\n}\n.container-product .old-wrapper .menu-product {\n  display: -webkit-box;\n  display: flex;\n  width: 60%;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.container-product .old-wrapper .menu-product .item a {\n  margin: 0;\n  padding: 16px 18px 14px;\n  border-bottom: 4px solid transparent;\n  font-size: 16px;\n  text-decoration: none;\n  color: #666;\n  -webkit-transition: opacity 0.2s ease, border-bottom-color 0.2s ease;\n  transition: opacity 0.2s ease, border-bottom-color 0.2s ease;\n  cursor: pointer;\n  line-height: 54px;\n}\n.container-product .content {\n  width: 1200px;\n  margin: auto;\n}\n.container-product .content .old-pr {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n  margin-top: 30px;\n}\n.container-product .content .old-pr .total-product {\n  width: 250px;\n  height: 30px;\n  border: 1px solid red;\n  border-radius: 10px;\n  margin-left: 30px;\n}\n.container-product .content .old-pr .total-product p {\n  line-height: 30px;\n  margin-left: 5px;\n}\n.container-product .content .product-content {\n  width: 100%;\n}\n.container-product .content .product-content .product {\n  float: left;\n  width: 16.6%;\n  height: 275px;\n  padding: 3px;\n}\n.container-product .content .product-content .product .product-div {\n  border: 1px solid transparent;\n  background: white;\n  cursor: pointer;\n}\n.container-product .content .product-content .product .product-div .img {\n  width: 100%;\n}\n.container-product .content .product-content .product .product-div .img img {\n  width: 100%;\n  height: 188px;\n}\n.container-product .content .product-content .product .product-div .name a {\n  padding: 4px;\n  word-wrap: break-word;\n  line-height: 1.125rem;\n  height: 2.25rem;\n  overflow: hidden;\n  display: -webkit-box;\n  text-overflow: ellipsis;\n  -webkit-box-orient: vertical;\n  -webkit-line-clamp: 2;\n}\n.container-product .content .product-content .product .product-div .price p {\n  padding: 4px;\n  color: red;\n  margin-top: 10px;\n}", ""]);
 
 // exports
 
@@ -62356,7 +62356,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69375,7 +69375,7 @@ var errors = function errors(_errors) {
 /*!***************************************!*\
   !*** ./resources/js/actions/order.js ***!
   \***************************************/
-/*! exports provided: fetchDataOrder, fetchDataStore, fetchDataOrderDetail, fetchDataDetailStore, changeStatusOrder */
+/*! exports provided: fetchDataOrder, fetchDataStore, fetchDataOrderDetail, fetchDataDetailStore, queryDateOrder, changeStatusOrder */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69384,6 +69384,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDataStore", function() { return fetchDataStore; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDataOrderDetail", function() { return fetchDataOrderDetail; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDataDetailStore", function() { return fetchDataDetailStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "queryDateOrder", function() { return queryDateOrder; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changeStatusOrder", function() { return changeStatusOrder; });
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
@@ -69451,8 +69452,9 @@ var fetchDataDetailStore = function fetchDataDetailStore(data) {
     type: _constants_index__WEBPACK_IMPORTED_MODULE_1__["FETCH_DATA_ORDER_DETAIL"],
     data: data
   };
-};
-var changeStatusOrder = function changeStatusOrder(id) {
+}; //query date order
+
+var queryDateOrder = function queryDateOrder(date) {
   return (
     /*#__PURE__*/
     function () {
@@ -69465,12 +69467,18 @@ var changeStatusOrder = function changeStatusOrder(id) {
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("".concat(_constants_api__WEBPACK_IMPORTED_MODULE_2__["ROOT_URL"], "/edit/bill/") + id);
+                return axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("".concat(_constants_api__WEBPACK_IMPORTED_MODULE_2__["ROOT_URL"], "/queryDate/bill/"), {
+                  dateStart: date.dateStart,
+                  dateEnd: date.dateEnd,
+                  status: date.status
+                });
 
               case 2:
                 data = _context2.sent;
+                // console.log(data)
+                dispatch(fetchDataStore(data.data));
 
-              case 3:
+              case 4:
               case "end":
                 return _context2.stop();
             }
@@ -69480,6 +69488,44 @@ var changeStatusOrder = function changeStatusOrder(id) {
 
       return function (_x2) {
         return _ref2.apply(this, arguments);
+      };
+    }()
+  );
+}; // export const fetchDataOrder = (data) => {
+//     return {
+//         type: Types.FETCH_DATA_ORDER_DETAIL,
+//         data
+//     }
+// }
+
+var changeStatusOrder = function changeStatusOrder(id) {
+  return (
+    /*#__PURE__*/
+    function () {
+      var _ref3 = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(dispatch) {
+        var data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                _context3.next = 2;
+                return axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("".concat(_constants_api__WEBPACK_IMPORTED_MODULE_2__["ROOT_URL"], "/edit/bill/") + id);
+
+              case 2:
+                data = _context3.sent;
+
+              case 3:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3);
+      }));
+
+      return function (_x3) {
+        return _ref3.apply(this, arguments);
       };
     }()
   );
@@ -69539,6 +69585,7 @@ var fetchProduct = function fetchProduct() {
 var editProduct = function editProduct(id) {
   return function (dispatch) {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("".concat(_constants_api__WEBPACK_IMPORTED_MODULE_1__["ROOT_URL"], "/edit/product/") + id).then(function (response) {
+      console.log(response);
       dispatch(fetchEditProductStore(response.data));
     });
   };
@@ -69557,8 +69604,8 @@ var updateProduct = function updateProduct(id, product) {
       price: product.price,
       CateId: product.CateId,
       images: product.images,
-      nameClassify: nameClassify,
-      classify: classify
+      nameClassify: product.nameClassify,
+      classify: product.classify
     }).then(function (response) {// dispatch(addCateStore(response.data.cate))
     })["catch"](function (error) {
       if (error.response) {
@@ -70790,7 +70837,7 @@ function (_Component) {
         className: "nav-right"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Shopee - K\xEAnh Ng\u01B0\u1EDDi b\xE1n"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "PhamQuyShop - K\xEAnh Ng\u01B0\u1EDDi b\xE1n"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "nav-left"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "nofi"
@@ -70938,6 +70985,11 @@ function (_Component) {
       _this.props.history.goBack();
     });
 
+    _defineProperty(_assertThisInitialized(_this), "formatPrice", function (value) {
+      var val = (value / 1).toFixed(0).replace(".", ",");
+      return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    });
+
     _this.state = {};
     return _this;
   }
@@ -70956,6 +71008,8 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var ordersDetail = this.props.ordersDetail;
       var bills_detail;
 
@@ -70983,41 +71037,59 @@ function (_Component) {
             className: "name"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, item.product.name))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "price-order"
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, item.product.discount)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _this2.formatPrice(item.product.discount))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "qty-order"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "total-order"
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, item.product.discount * item.qty)));
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _this2.formatPrice(item.product.discount * item.qty))));
         });
+      }
+
+      var status;
+
+      if (ordersDetail.status == 0) {
+        status = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0110\u01A1n h\xE0ng \u0111ang \u0111\u1EE3i x\xE1c nh\u1EADn");
+      } else if (ordersDetail.status == 1) {
+        status = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0110\u01A1n h\xE0ng \u0111\xE3 \u0111\u01B0\u1EE3c x\xE1c nh\u1EADn");
+      } else if (ordersDetail.status == 2) {
+        status = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0110\u01A1n h\xE0ng \u0111\xE3 giao cho \u0111\u01A1n v\u1ECB v\u1EADn chuy\u1EC3n");
+      } else if (ordersDetail.status == 3) {
+        status = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0110\u01A1n h\xE0ng \u0111\xE3 giao \u0111\u01B0\u1EE3c giao");
       }
 
       var button;
 
       if (ordersDetail.status == 0) {
         button = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-          onClick: this.changeStatus
+          onClick: this.changeStatus,
+          className: "btn btn-danger"
         }, "X\xE1c nh\u1EADn \u0111\u01A1n h\xE0ng");
       } else if (ordersDetail.status == 1) {
         button = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-          onClick: this.changeStatus
+          onClick: this.changeStatus,
+          className: "btn btn-danger"
         }, "\u0110\xE3 l\u1EA5y h\xE0ng");
       } else if (ordersDetail.status == 2) {
         button = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-          onClick: this.changeStatus
+          onClick: this.changeStatus,
+          className: "btn btn-danger"
         }, "\u0110\xE3 giao th\xE0nh c\xF4ng");
+        {
+          ordersDetail.note === '' ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "L\u1EDDi nh\u1EAFn ng\u01B0\u1EDDi mua : ", ordersDetail.note);
+        }
       }
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-detail"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "status"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0110\xE3 h\u1EE7y"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Do ng\u01B0\u1EDDi d\xF9ng h\u1EE7y"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, status, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "button"
       }, button)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "infor-customer"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "infor"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "ID \u0110\u01A1n h\xE0ng"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, ordersDetail ? ordersDetail.id + '-' + ordersDetail.address.district.name : '')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "ID \u0110\u01A1n h\xE0ng : ", ordersDetail.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, ordersDetail ? ordersDetail.id + '-' + ordersDetail.address.district.name : '')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "infor"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0110\u1ECBa ch\u1EC9 nh\u1EADn h\xE0ng"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", ordersDetail ? ordersDetail.address.address + '-' + ordersDetail.address.district.name + '-' + ordersDetail.address.province.name : ''), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, ordersDetail ? ordersDetail.address.name + '-' + ordersDetail.address.phone : '')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "infor"
@@ -71032,7 +71104,7 @@ function (_Component) {
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "name-user"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "phamquy96cn"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, ordersDetail.user.name))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "infor"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Th\xF4ng tin thanh to\xE1n"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "title-order-view"
@@ -71056,7 +71128,7 @@ function (_Component) {
         className: "div-title"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "T\u1ED5ng ti\u1EC1n s\u1EA3n ph\u1EA9m")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "div-sum"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u20AB", ordersDetail ? ordersDetail.sum : ''))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u20AB", ordersDetail ? this.formatPrice(ordersDetail.sum) : ''))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "div"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "div-title"
@@ -71159,9 +71231,38 @@ function (_Component) {
       console.log(order);
     });
 
+    _defineProperty(_assertThisInitialized(_this), "onChange", function (e) {
+      console.log(e.target.value);
+
+      _this.setState(_defineProperty({}, e.target.name, e.target.value));
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onSubmit", function (e) {
+      console.log('asddsasad');
+      e.preventDefault();
+      var _this$state = _this.state,
+          dateStart = _this$state.dateStart,
+          dateEnd = _this$state.dateEnd,
+          status = _this$state.status;
+      var date = {
+        dateStart: dateStart,
+        dateEnd: dateEnd,
+        status: status
+      };
+
+      _this.props.queryDateOrder(date);
+    });
+
     _defineProperty(_assertThisInitialized(_this), "queryOrder", function (e) {
+      var _this$state2 = _this.state,
+          dateStart = _this$state2.dateStart,
+          dateEnd = _this$state2.dateEnd,
+          status = _this$state2.status;
+
       _this.setState({
-        status: e
+        status: e,
+        dateStart: '',
+        dateEnd: ''
       });
     });
 
@@ -71171,7 +71272,9 @@ function (_Component) {
     });
 
     _this.state = {
-      status: -1
+      status: -1,
+      dateStart: '',
+      dateEnd: ''
     };
     return _this;
   }
@@ -71187,7 +71290,10 @@ function (_Component) {
       var _this2 = this;
 
       var orders = this.props.orders;
-      var status = this.state.status;
+      var _this$state3 = this.state,
+          status = _this$state3.status,
+          dateStart = _this$state3.dateStart,
+          dateEnd = _this$state3.dateEnd;
       var bill = orders;
 
       if (status > -1) {
@@ -71216,7 +71322,7 @@ function (_Component) {
       if (bill) {
         var almProduct = bill.map(function (order, index) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-            className: "product-content",
+            className: "bill-content",
             key: index
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "order-view-content"
@@ -71321,11 +71427,46 @@ function (_Component) {
       }, "className", status === 4 ? 'active' : 'item'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\u0110\xE3 h\u1EE7y")))), bill.length == 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Kh\xF4ng c\xF3 \u0111\u01A1n h\xE0ng n\xE0o") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        "class": "col-xs-15 col-sm-15 col-md-15 col-lg-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        name: "",
+        "class": "form-control",
+        placeholder: "Nh\u1EADp t\xEAn ho\u1EB7c m\xE3 \u0111on h\xE0ng \u0111\u1EC3 t\xECm ki\u1EBFm"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        "class": "col-xs-15 col-sm-15 col-md-15 col-lg-1 name-date"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ng\xE0y \u0111\u1EB7t :")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        "class": "col-xs-15 col-sm-15 col-md-15 col-lg-2"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "date",
+        id: "input-1",
+        "class": "form-control",
+        name: "dateStart",
+        onChange: this.onChange,
+        value: dateStart
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        "class": "col-xs-15 col-sm-15 col-md-15 col-lg-2"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "date",
+        id: "input-2",
+        "class": "form-control",
+        name: "dateEnd",
+        onChange: this.onChange,
+        value: dateEnd
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "submit",
+        name: "",
+        value: "T\xECm",
+        "class": "btn btn-danger",
+        onClick: this.onSubmit
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "old-pr"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "1 S\u1EA3n Ph\u1EA9m")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "total-product"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "1 / 1000"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "product-content"
+        className: "bill-content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "name"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "S\u1EA3n ph\u1EA9m")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -71354,6 +71495,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, props) {
   return {
     fetchDataOrder: function fetchDataOrder() {
       dispatch(Object(_actions_order__WEBPACK_IMPORTED_MODULE_4__["fetchDataOrder"])());
+    },
+    queryDateOrder: function queryDateOrder(date) {
+      dispatch(Object(_actions_order__WEBPACK_IMPORTED_MODULE_4__["queryDateOrder"])(date));
     }
   };
 };
@@ -71522,6 +71666,7 @@ function (_Component) {
           index = _this$state.index,
           classify = _this$state.classify,
           nameClassify = _this$state.nameClassify;
+      console.log(nameClassify);
       var product = {
         name: name,
         SubcateId: SubcateId,
@@ -71703,7 +71848,8 @@ function (_Component) {
     value: function componentWillReceiveProps(nextProps) {
       if (nextProps && nextProps.product) {
         var product = nextProps.product,
-            mulimage = nextProps.mulimage;
+            mulimage = nextProps.mulimage,
+            classify = nextProps.classify;
         this.setState({
           name: product.name,
           CateId: product.CateId,
@@ -71716,7 +71862,9 @@ function (_Component) {
           mass: product.mass,
           image: product.image,
           images: mulimage,
-          index: 0
+          index: 0,
+          classify: classify,
+          nameClassify: product.nameClassify
         });
       }
     }
@@ -71775,11 +71923,11 @@ function (_Component) {
 
       if (images.length > 0) {
         var elmimage = images.map(function (image, index) {
-          return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+          return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", _defineProperty({
             className: "img",
             src: image.image,
             key: index
-          });
+          }, "className", "images"));
         });
       }
 
@@ -71952,18 +72100,19 @@ function (_Component) {
         className: "form-control-textarea",
         onChange: this.onChange,
         value: description
-      }, "name", "description")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", _defineProperty({
+      }, "name", "description")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", _defineProperty({
         type: "file",
         onChange: this.uploadImg,
         ref: "file",
         id: "file"
-      }, "ref", "file")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-        src: image
-      }), elmimage, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+      }, "ref", "file")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: image,
+        className: "image"
+      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
         type: "file",
         multiple: true,
         onChange: this.fileSelectedHandler
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, elmimage)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "form"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
         onClick: this.onClick
@@ -71981,7 +72130,8 @@ var mapStateToProps = function mapStateToProps(state) {
     subcates: state.product.subcates,
     units: state.product.units,
     product: state.product.product,
-    mulimage: state.product.mulimage
+    mulimage: state.product.mulimage,
+    classify: state.product.classify
   };
 };
 
@@ -72245,7 +72395,7 @@ function (_Component) {
         className: "container-home"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "title"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Ch\xE0o m\u1EEBng \u0111\u1EBFn v\u1EDBi Shopee - K\xEAnh Ng\u01B0\u1EDDi b\xE1n")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Ch\xE0o m\u1EEBng \u0111\u1EBFn v\u1EDBi PhamQuyShop - K\xEAnh Ng\u01B0\u1EDDi b\xE1n")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content-home"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "item-menu-home"
@@ -72578,7 +72728,8 @@ var initialState = {
   units: [],
   products: [],
   product: {},
-  mulimage: []
+  mulimage: [],
+  classify: []
 };
 
 var findIndex = function findIndex(subcates, id) {
@@ -72617,7 +72768,8 @@ var product = function product() {
     case _constants_index__WEBPACK_IMPORTED_MODULE_0__["EDIT_PRODUCT"]:
       return {
         product: action.product.product,
-        mulimage: _toConsumableArray(action.product.mulimage)
+        mulimage: _toConsumableArray(action.product.mulimage),
+        classify: _toConsumableArray(action.product.classify)
       };
     // case Types.UPDATE_CATE:
     //     index = findIndex(state.cates, cate.id);

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './../../../sass/product/action.scss'
-
 import { connect } from 'react-redux'
 import { addProduct, fetchData, editProduct, updateProduct } from './../../actions/product'
 class actionProduct extends Component {
@@ -77,7 +76,7 @@ class actionProduct extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps && nextProps.product) {
-      var { product, mulimage } = nextProps;
+      var { product, mulimage, classify } = nextProps;
       this.setState({
         name: product.name,
         CateId: product.CateId,
@@ -90,7 +89,9 @@ class actionProduct extends Component {
         mass: product.mass,
         image: product.image,
         images: mulimage,
-        index: 0
+        index: 0,
+        classify: classify,
+        nameClassify : product.nameClassify
       });
     }
   }
@@ -173,7 +174,9 @@ class actionProduct extends Component {
     })
   }
   onClick = () => {
-    var { name, CateId, SubcateId, UnitId, description, discount, price, qty, mass, image, images, index  , classify , nameClassify} = this.state
+
+    var { name, CateId, SubcateId, UnitId, description, discount, price, qty, mass, image, images, index, classify, nameClassify } = this.state
+    console.log(nameClassify)
     var product = {
       name: name,
       SubcateId: SubcateId,
@@ -186,8 +189,8 @@ class actionProduct extends Component {
       price: price,
       images: images,
       CateId: CateId,
-      nameClassify : nameClassify,
-      classify : classify
+      nameClassify: nameClassify,
+      classify: classify
     }
     if (index > -1) {
       var id = this.props.match.params.id
@@ -229,7 +232,7 @@ class actionProduct extends Component {
     if (images.length > 0) {
       var elmimage = images.map((image, index) => {
         return (
-          <img className="img" src={image.image} key={index} />
+          <img className="img" src={image.image} key={index} className='images'/>
         );
       })
     }
@@ -361,10 +364,20 @@ class actionProduct extends Component {
             <textarea name="" id="" cols="30" rows="10" className="form-control-textarea" onChange={this.onChange} value={description} name="description"></textarea>
           </div>
         </div>
-        <input type="file" onChange={this.uploadImg} ref='file' id='file' ref='file' />
-        <img src={image} />
-        {elmimage}
-        <input type="file" multiple onChange={this.fileSelectedHandler} />
+        <div>
+          <input type="file" onChange={this.uploadImg} ref='file' id='file' ref='file' />
+          <div>
+            <img src={image} className='image'/>
+          </div>
+        </div>
+
+        <div>
+          <input type="file" multiple onChange={this.fileSelectedHandler} />
+          <div>
+            {elmimage}
+          </div>
+        </div>
+
         <div className="form">
           <button onClick={this.onClick}>Lưu</button>
           <button>Hủy</button>
@@ -381,7 +394,8 @@ const mapStateToProps = state => {
     subcates: state.product.subcates,
     units: state.product.units,
     product: state.product.product,
-    mulimage: state.product.mulimage
+    mulimage: state.product.mulimage,
+    classify: state.product.classify
   }
 }
 const mapDispatchToProps = (dispatch, props) => {

@@ -30,6 +30,7 @@ class productController extends Controller
         $product->qty =  $request->qty;
         $product->image =  $request->image;
         $product->SubcateId =  $request->SubcateId;
+        $product->nameClassify = $request->nameClassify;
         $product->UserId =  Auth::user()->id;
         $product->UnitId =  $request->UnitId;
         $product->sold =  0;
@@ -71,12 +72,14 @@ class productController extends Controller
         // dd($id);
         $product = Product::find($id);
         $mulimage = Mulimage::where('ProductId',$id)->get();
+        $classify = Classify::where('ProductId',$id)->get();
         // $file=$res->file;
 		// $name= $file->getClientOriginalName();
 		// $file->move("img",$name); 
 		return response([
             'product' => $product,
-            'mulimage' => $mulimage
+            'mulimage' => $mulimage,
+            'classify' => $classify
         ], 200);
     }
 
@@ -90,6 +93,7 @@ class productController extends Controller
         $product->mass =  $request->mass;
         $product->discount =  $request->discount;
         $product->khuyenmai =  'dsadasasd';
+        $product->nameClassify = $request->nameClassify;
         $product->qty =  $request->qty;
         $product->image =  $request->image;
         $product->SubcateId =  $request->SubcateId;
@@ -100,6 +104,7 @@ class productController extends Controller
         $product->keyword =  changeTitle($request->name);
         $product->save();
         $mulimage  = Mulimage::where('ProductId',$id)->get();
+        $classify = Classify::where('ProductId',$id)->get();
         foreach ($mulimage as $file) {
             // dd($file);
             $file->delete();
@@ -107,6 +112,24 @@ class productController extends Controller
             // $mulimage->image =  $file['image'];
             // $mulimage->ProductId =  $product->id;
             // $mulimage->save();
+        }
+        foreach ($classify as $file) {
+            // dd($file);
+            $file->delete();
+            // $mulimage  = new Mulimage;
+            // $mulimage->image =  $file['image'];
+            // $mulimage->ProductId =  $product->id;
+            // $mulimage->save();
+        }
+        foreach ($request->classify as $file) {
+            // dd($file);
+            $classify  = new Classify;
+            $classify->name =  $file['name'];
+            $classify->qty =  $file['qty'];
+            $classify->price =  $file['price'];
+            $classify->discount =  0;
+            $classify->ProductId =  $product->id;
+            $classify->save();
         }
         foreach ($request->images as $file) {
             // dd($file);

@@ -6,7 +6,7 @@ class HomeContainer extends Component {
     return (
       <div className="container-home">
         <div className='title'>
-          <h1>Chào mừng đến với Shopee - Kênh Người bán</h1>
+          <h1>Chào mừng đến với PhamQuyShop - Kênh Người bán</h1>
         </div>
         <div className="content-home">
           <div className="item-menu-home">

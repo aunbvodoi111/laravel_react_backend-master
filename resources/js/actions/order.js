@@ -31,6 +31,26 @@ export const fetchDataDetailStore = (data) => {
         data
     }
 }
+//query date order
+export  const  queryDateOrder = (date) => {
+    return async (dispatch) => {
+        var data = await axios.post(`${ROOT_URL}/queryDate/bill/`,{
+            dateStart : date.dateStart,
+            dateEnd: date.dateEnd,
+            status : date.status
+        })
+        // console.log(data)
+            dispatch(fetchDataStore(data.data))
+        
+    }
+}
+
+// export const fetchDataOrder = (data) => {
+//     return {
+//         type: Types.FETCH_DATA_ORDER_DETAIL,
+//         data
+//     }
+// }
 
 export  const  changeStatusOrder = (id) => {
     return async (dispatch) => {

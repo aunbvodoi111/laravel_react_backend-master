@@ -45,6 +45,7 @@ Route::get('/list/cart','CartController@list');
 //bill
 Route::get('/list/bill','BillController@list');
 Route::post('/edit/bill/{id}','BillController@editBill');
+Route::post('/queryDate/bill','BillController@queryDateBill');
 Route::get('/list/bill/detail/{id}','BillController@orderDetail');
 //mail
 Route::get('/send','BillController@sendMail');

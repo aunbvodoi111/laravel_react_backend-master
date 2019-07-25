@@ -21,6 +21,7 @@ export const fetchProduct = () => {
 export const editProduct = (id) => {
     return (dispatch) => {
         axios.get(`${ROOT_URL}/edit/product/` + id).then(response => {
+            console.log(response)
             dispatch(fetchEditProductStore(response.data))
         })
     }
@@ -40,8 +41,8 @@ export const updateProduct = (id, product) => {
             price: product.price,
             CateId: product.CateId,
             images: product.images,
-            nameClassify : nameClassify,
-            classify : classify
+            nameClassify : product.nameClassify,
+            classify : product.classify
         }).then(response => {
             // dispatch(addCateStore(response.data.cate))
         })
