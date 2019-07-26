@@ -71463,9 +71463,9 @@ function (_Component) {
         onClick: this.onSubmit
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "old-pr"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "1 S\u1EA3n Ph\u1EA9m")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, orders.length, " \u0110\u01A1n h\xE0ng")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "total-product"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "1 / 1000"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, orders.length, " / 1000"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "bill-content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "name"
@@ -72015,8 +72015,9 @@ function (_Component) {
         value: nameClassify,
         name: "nameClassify"
       }))), classifyok, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-        onClick: this.addClass
-      }, "Th\xEAm"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
+        onClick: this.addClass,
+        className: "btn btn-danger"
+      }, "Th\xEAm ph\xE2n lo\u1EA1i h\xE0ng"), classify.length > 0 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
         className: "table"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, nameClassify === '' ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
         scope: "col"
@@ -72026,7 +72027,7 @@ function (_Component) {
         scope: "col"
       }, "G\xEDa"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
         scope: "col"
-      }, "Kho h\xE0ng"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tbody", null, table)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }, "Kho h\xE0ng"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tbody", null, table)) : '', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "form"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "label"
@@ -72312,9 +72313,9 @@ function (_Component) {
         className: "content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "old-pr"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "1 S\u1EA3n Ph\u1EA9m")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, products.length, " S\u1EA3n Ph\u1EA9m")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "total-product"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "1 / 1000"))), products.length == 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Kh\xF4ng c\xF3 \u0111\u01A1n h\xE0ng n\xE0o") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, products.length, " / 1000"))), products.length == 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Kh\xF4ng c\xF3 s\u1EA3n ph\u1EA9m n\xE0o") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-content"
       }, almProduct)));
     }

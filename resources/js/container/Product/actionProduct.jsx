@@ -301,7 +301,8 @@ class actionProduct extends Component {
           </div>
         </div>
         {classifyok}
-        <button onClick={this.addClass}>Thêm</button>
+        <button onClick={this.addClass} className='btn btn-danger'>Thêm phân loại hàng</button>
+        {classify.length > 0 ? 
         <table className="table">
           <thead>
             <tr>
@@ -311,9 +312,10 @@ class actionProduct extends Component {
             </tr>
           </thead>
           <tbody>
-            {table}
+            { table}
           </tbody>
         </table>
+        :''}
         <div className="form">
           <div className="label">
             <p>*Tên sản phẩm</p>

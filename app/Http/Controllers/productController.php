@@ -29,6 +29,7 @@ class productController extends Controller
         $product->khuyenmai =  'dsadasasd';
         $product->qty =  $request->qty;
         $product->image =  $request->image;
+        $product->ProvinceId =  Auth::user()->ProvinceId;
         $product->SubcateId =  $request->SubcateId;
         $product->nameClassify = $request->nameClassify;
         $product->UserId =  Auth::user()->id;
@@ -96,6 +97,7 @@ class productController extends Controller
         $product->nameClassify = $request->nameClassify;
         $product->qty =  $request->qty;
         $product->image =  $request->image;
+        $product->ProvinceId =  Auth::user()->ProvinceId;
         $product->SubcateId =  $request->SubcateId;
         $product->UserId =  Auth::user()->id;
         $product->UnitId =  $request->UnitId;

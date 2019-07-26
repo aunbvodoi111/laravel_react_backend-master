@@ -79,13 +79,13 @@ class productContainer extends Component {
         <div className='content'>
           <div className="old-pr">
             <div>
-              <h5>1 Sản Phẩm</h5>
+              <h5>{ products.length } Sản Phẩm</h5>
             </div>
             <div className='total-product'>
-              <p>1 / 1000</p>
+              <p>{ products.length } / 1000</p>
             </div>
           </div>
-          { products.length == 0 ? <h1>Không có đơn hàng nào</h1> :<div className="product-content">
+          { products.length == 0 ? <h1>Không có sản phẩm nào</h1> :<div className="product-content">
             {almProduct}
             {/* <div style=" clear:both;"></div> */}
           </div>

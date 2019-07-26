@@ -200,10 +200,10 @@ class productContainer extends Component {
           </div>
           <div className="old-pr">
             <div>
-              <h5>1 Sản Phẩm</h5>
+              <h5>{orders.length} Đơn hàng</h5>
             </div>
             <div className='total-product'>
-              <p>1 / 1000</p>
+              <p>{orders.length} / 1000</p>
             </div>
           </div>
           <div className="bill-content">
